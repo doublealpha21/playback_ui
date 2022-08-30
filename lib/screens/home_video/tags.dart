@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
-import 'package:playback_ui/widgets/horizontal_space.dart';
-import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class Tags extends StatelessWidget {
   const Tags({Key? key}) : super(key: key);
@@ -90,14 +84,16 @@ class Tags extends StatelessWidget {
                             border: Border.all(
                                 width: 1, color: ColorResources.White),
                           ),
-                          child: Icon(Icons.filter_alt_rounded,
+                          child: const Icon(Icons.filter_alt_rounded,
                               color: ColorResources.White),
                         ),
-                        SizedBox(width: 2),
-                        Container(width: 20,color: Colors.white,),
+                        const SizedBox(width: 2),
+                        Container(
+                          width: 20,
+                          color: Colors.white,
+                        ),
                       ],
                     )
-
                   ],
                 ),
               )

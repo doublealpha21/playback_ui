@@ -60,7 +60,7 @@ class ProfileSidebar extends StatelessWidget {
         children: [
           Expanded(
             child: ListView(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,7 +83,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -102,7 +102,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -122,7 +122,7 @@ class ProfileSidebar extends StatelessWidget {
                       ],
                     ),
                     VerticalSpace(),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -141,7 +141,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -160,7 +160,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -179,7 +179,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -198,7 +198,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -217,7 +217,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -236,7 +236,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(
@@ -255,7 +255,7 @@ class ProfileSidebar extends StatelessWidget {
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Row(
                       children: const [
                         Icon(

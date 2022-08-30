@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:playback_ui/utils/colors.dart';
 
 class Custom_Textfield extends StatelessWidget {
   final String hint;
@@ -12,7 +11,7 @@ class Custom_Textfield extends StatelessWidget {
         color: Color(0xff2D2D2D)
       ),
       decoration: InputDecoration(
-        hintText: '$hint',
+        hintText: hint,
         fillColor: const Color(0xff202125),
         hintStyle: const TextStyle(
           color: Color(0XFF787878),

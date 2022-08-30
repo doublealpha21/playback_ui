@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
-import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/utils/textfield.dart';
@@ -60,7 +59,7 @@ class Login extends StatelessWidget {
                     ),)
                   ],
                 ),
-                VerticalSpace(),
+                const VerticalSpace(),
                 const CustomButton(hint: 'Log in',
                     Colour: Color(0xFFF80C7D)),
                 const VerticalSpace(),
@@ -112,7 +111,7 @@ class Login extends StatelessWidget {
                 ),)
             ],
           ),
-          VerticalSpace()
+          const VerticalSpace()
 
         ],
       ),

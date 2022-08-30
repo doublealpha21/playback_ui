@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
-import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:playback_ui/widgets/temp_search_result.dart';
 
@@ -91,34 +87,34 @@ class SearchView extends StatelessWidget {
           ),
           const VerticalSpace(),
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Icon(Icons.search_rounded,color: ColorResources.White),
-              const Text('momeents',
+            children: const [
+              Icon(Icons.search_rounded,color: ColorResources.White),
+              Text('momeents',
                 style: TextStyle(
                   color: ColorResources.White,
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              const Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
+              Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
             ],
           ),
           const VerticalSpace(),
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Icon(Icons.search_rounded,color: ColorResources.White),
-              const Text('momeents',
+            children: const [
+              Icon(Icons.search_rounded,color: ColorResources.White),
+              Text('momeents',
                 style: TextStyle(
                   color: ColorResources.White,
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              const Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
+              Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
             ],
           ),
-          VerticalSpace(),
-          TempSearchResult(search_result: 'confidence')
+          const VerticalSpace(),
+          const TempSearchResult(search_result: 'confidence')
         ],
       ),
     );

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/custom_mini_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
 
 class SearchResults extends StatelessWidget {
   const SearchResults({Key? key}) : super(key: key);
@@ -157,7 +154,7 @@ class SearchResults extends StatelessWidget {
                             ))
                       ],
                     ),
-                    Container(
+                    SizedBox(
                       height: 150,
                       width: double.infinity,
                       child: Flexible(
@@ -637,7 +634,7 @@ class SearchResults extends StatelessWidget {
                             ))
                       ],
                     ),
-                    Container(
+                    SizedBox(
                       height: 180,
                       child: Flexible(
                         child: GridView.count(

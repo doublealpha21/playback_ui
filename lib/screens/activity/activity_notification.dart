@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class ActivityNotification extends StatelessWidget {
   const ActivityNotification({Key? key}) : super(key: key);
@@ -26,7 +23,7 @@ class ActivityNotification extends StatelessWidget {
                   decoration: BoxDecoration(
                     border:
                         Border.all(color: ColorResources.MatteBlack, width: 1),
-                    borderRadius: BorderRadius.vertical(),
+                    borderRadius: const BorderRadius.vertical(),
                   ),
                   child: DropdownButton(
                     icon: const Icon(Icons.keyboard_arrow_down,
@@ -52,12 +49,12 @@ class ActivityNotification extends StatelessWidget {
                     onChanged: (String? newValue) {},
                   ),
                 ),
-                VerticalSpace(),
+                const VerticalSpace(),
                 Container(
                   color: ColorResources.MatteBlack,
                   width: 360,
                   height: 180,
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Column(
                     children: [
                       Row(
@@ -70,7 +67,7 @@ class ActivityNotification extends StatelessWidget {
                               ))
                         ],
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
@@ -90,7 +87,7 @@ class ActivityNotification extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
@@ -110,7 +107,7 @@ class ActivityNotification extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [

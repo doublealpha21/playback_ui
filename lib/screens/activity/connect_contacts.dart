@@ -4,8 +4,6 @@ import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class ConnectContacts extends StatelessWidget {
   const ConnectContacts({Key? key}) : super(key: key);

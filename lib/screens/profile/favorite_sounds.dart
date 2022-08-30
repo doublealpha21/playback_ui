@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
-import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class FavoriteSounds extends StatelessWidget {
   const FavoriteSounds({Key? key}) : super(key: key);
@@ -123,8 +119,8 @@ class FavoriteSounds extends StatelessWidget {
                               )),
                           const SizedBox(width: 10),
                           Column(
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 'Before you go',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -132,7 +128,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 'Lewis Capaldi',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -140,7 +136,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 '00:41 Sec',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -176,8 +172,8 @@ class FavoriteSounds extends StatelessWidget {
                               )),
                           const SizedBox(width: 10),
                           Column(
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 'Before you go',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -185,7 +181,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 'Lewis Capaldi',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -193,7 +189,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 '00:41 Sec',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -229,8 +225,8 @@ class FavoriteSounds extends StatelessWidget {
                               )),
                           const SizedBox(width: 10),
                           Column(
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 'Before you go',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -238,7 +234,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 'Lewis Capaldi',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -246,7 +242,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 '00:41 Sec',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -282,8 +278,8 @@ class FavoriteSounds extends StatelessWidget {
                               )),
                           const SizedBox(width: 10),
                           Column(
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 'Before you go',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -291,7 +287,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 'Lewis Capaldi',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -299,7 +295,7 @@ class FavoriteSounds extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 '00:41 Sec',
                                 style: TextStyle(
                                   color: ColorResources.White,

@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
-import 'package:playback_ui/widgets/horizontal_space.dart';
-import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class HomeLoggedIn extends StatelessWidget {
   const HomeLoggedIn({Key? key}) : super(key: key);
@@ -32,16 +26,16 @@ class HomeLoggedIn extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.search,
                     color: ColorResources.White,
                   ),
-                  SizedBox(width: 17),
+                  const SizedBox(width: 17),
                   const Icon(
                     Icons.person_add_alt,
                     color: ColorResources.White,
                   ),
-                  SizedBox(width: 17),
+                  const SizedBox(width: 17),
                   Container(
                       height: 40,
                       width: 40,

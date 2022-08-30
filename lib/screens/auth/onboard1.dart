@@ -132,7 +132,7 @@ class Onboard1 extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Male',
                         style: TextStyle(
-                          color:  Color(0xFFFB3B3B3),
+                          color:  Color(0xfffb3b3b3),
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
                       ),
@@ -147,7 +147,7 @@ class Onboard1 extends StatelessWidget {
                     const SizedBox(height: 5),
                     const Text('Female',
                       style: TextStyle(
-                        color: Color(0xFFFF80C7D),
+                        color: Color(0xffff80c7d),
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
                       ),

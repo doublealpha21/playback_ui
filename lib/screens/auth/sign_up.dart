@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/utils/dimensions.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import '../../utils/textfield.dart';
@@ -36,7 +35,7 @@ class SignUp extends StatelessWidget {
             const Custom_Textfield(hint: 'Re-Type Your Password'),
             const SizedBox(height: 20),
             const CustomButton(
-              Colour: const Color(0xffF80C7D),
+              Colour: Color(0xffF80C7D),
               hint: 'Sign Up',
             ),
             const SizedBox(height: 20),
@@ -68,7 +67,7 @@ class SignUp extends StatelessWidget {
               hint: 'Continue With Twitter',
               Colour: Color(0XFF1E81C9),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [

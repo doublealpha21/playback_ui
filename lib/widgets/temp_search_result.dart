@@ -13,15 +13,15 @@ class TempSearchResult extends StatelessWidget {
     return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(Icons.search_rounded, color: ColorResources.White),
-          Text('$search_result',
-            style: TextStyle(
+          const Icon(Icons.search_rounded, color: ColorResources.White),
+          Text(search_result,
+            style: const TextStyle(
               color: ColorResources.White,
               fontSize: 18,
               fontWeight: FontWeight.w700,
             ),
           ),
-          Icon(MaterialCommunityIcons.arrow_top_left,
+          const Icon(MaterialCommunityIcons.arrow_top_left,
             color: ColorResources.White,)
         ]
     );

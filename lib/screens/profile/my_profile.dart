@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class MyProfile extends StatelessWidget {
   const MyProfile({Key? key}) : super(key: key);
@@ -57,7 +53,10 @@ class MyProfile extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const Icon(Icons.check_circle,color: Colors.blue,),
+                      const Icon(
+                        Icons.check_circle,
+                        color: Colors.blue,
+                      ),
                       const SizedBox(width: 30),
                       Container(
                         height: 34,
@@ -104,7 +103,7 @@ class MyProfile extends StatelessWidget {
                         ),
                         child: const Text(
                           'Edit Profile',
-                          style:  TextStyle(
+                          style: TextStyle(
                             color: ColorResources.White,
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
@@ -203,7 +202,8 @@ class MyProfile extends StatelessWidget {
                     children: [
                       Column(
                         children: const [
-                          Text('29',
+                          Text(
+                            '29',
                             style: TextStyle(
                               color: ColorResources.White,
                               fontSize: 16,
@@ -212,17 +212,20 @@ class MyProfile extends StatelessWidget {
                           ),
                           SizedBox(height: 5),
                           SizedBox(height: 5),
-                          Text('Following',
+                          Text(
+                            'Following',
                             style: TextStyle(
                               color: ColorResources.White,
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
-                            ), )
+                            ),
+                          )
                         ],
                       ),
                       Column(
                         children: const [
-                          Text('121.9k',
+                          Text(
+                            '121.9k',
                             style: TextStyle(
                               color: ColorResources.White,
                               fontSize: 16,
@@ -230,17 +233,20 @@ class MyProfile extends StatelessWidget {
                             ),
                           ),
                           SizedBox(height: 5),
-                          Text('Followers',
+                          Text(
+                            'Followers',
                             style: TextStyle(
                               color: ColorResources.White,
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
-                            ), )
+                            ),
+                          )
                         ],
                       ),
                       Column(
                         children: const [
-                          Text('15.1k',
+                          Text(
+                            '15.1k',
                             style: TextStyle(
                               color: ColorResources.White,
                               fontSize: 16,
@@ -248,12 +254,14 @@ class MyProfile extends StatelessWidget {
                             ),
                           ),
                           SizedBox(height: 5),
-                          Text('Views',
+                          Text(
+                            'Views',
                             style: TextStyle(
                               color: ColorResources.White,
                               fontSize: 13,
                               fontWeight: FontWeight.w400,
-                            ), )
+                            ),
+                          )
                         ],
                       ),
                     ],
@@ -272,11 +280,13 @@ class MyProfile extends StatelessWidget {
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(162),
                         ),
-                        child:
-                        Row(
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
-                            Icon(Icons.video_collection_outlined,color: ColorResources.White,),
+                            Icon(
+                              Icons.video_collection_outlined,
+                              color: ColorResources.White,
+                            ),
                             Text(
                               'Insights',
                               style: TextStyle(
@@ -299,11 +309,13 @@ class MyProfile extends StatelessWidget {
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(162),
                         ),
-                        child:
-                        Row(
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
-                            Icon(Icons.photo_library_outlined,color: ColorResources.White,),
+                            Icon(
+                              Icons.photo_library_outlined,
+                              color: ColorResources.White,
+                            ),
                             Text(
                               'Photos',
                               style: TextStyle(
@@ -315,13 +327,13 @@ class MyProfile extends StatelessWidget {
                           ],
                         ),
                       ),
-
                     ],
                   ),
                   Column(
                     children: [
                       Expanded(
-                        child: GridView.count(crossAxisCount: 2,
+                        child: GridView.count(
+                          crossAxisCount: 2,
                           crossAxisSpacing: 10,
                           children: [
                             Container(
@@ -339,11 +351,11 @@ class MyProfile extends StatelessWidget {
                               width: 122.26,
                               color: ColorResources.PrimaryPurple,
                             ),
-                          ],),
+                          ],
+                        ),
                       ),
                     ],
                   )
-
                 ],
               )
             ],

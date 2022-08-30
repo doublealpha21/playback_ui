@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
-import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class EditProfile extends StatelessWidget {
   const EditProfile({Key? key}) : super(key: key);
@@ -132,7 +128,7 @@ class EditProfile extends StatelessWidget {
                 )
               ],
             ),
-            VerticalSpace(),
+            const VerticalSpace(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -155,7 +151,7 @@ class EditProfile extends StatelessWidget {
                 )
               ],
             ),
-            VerticalSpace(),
+            const VerticalSpace(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -178,19 +174,19 @@ class EditProfile extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             const Text('Social',
               style: TextStyle(
                 color: ColorResources.White,
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
               ),),
-            VerticalSpace(),
+            const VerticalSpace(),
             Container(
               height: 2,
               color: const Color(0xFF4D4D4D),
             ),
-            VerticalSpace(),
+            const VerticalSpace(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -213,7 +209,7 @@ class EditProfile extends StatelessWidget {
                 )
               ],
             ),
-            VerticalSpace(),
+            const VerticalSpace(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -236,7 +232,7 @@ class EditProfile extends StatelessWidget {
                 )
               ],
             ),
-            VerticalSpace(),
+            const VerticalSpace(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
