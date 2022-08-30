@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/activity/activity.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_mini_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
@@ -237,7 +238,7 @@ class SearchResults extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'BlackBear',
+                                  'Lil Pump',
                                   style: TextStyle(
                                     color: ColorResources.White,
                                     fontSize: 16,
@@ -256,23 +257,27 @@ class SearchResults extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const CustomMiniButton(
-                            Colour: ColorResources.PrimaryPink, hint: 'Follow'),
-                        // ElevatedButton(
-                        //   style: ElevatedButton.styleFrom(
-                        //     elevation: 1,
-                        //     primary: ColorResources.PrimaryPink,
-                        //     fixedSize: const Size.fromWidth(80),
-                        //
-                        //   ),
-                        //   onPressed: () {},
-                        //   child: Row(
-                        //     children: const [
-                        //       Text('Follow',
-                        //           textAlign: TextAlign.center),
-                        //     ],
-                        //   ),
-                        // ),
+                        // const CustomMiniButton(
+                        //     Colour: ColorResources.PrimaryPink, hint: 'Follow'),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            elevation: 1,
+                            primary: ColorResources.PrimaryPink,
+                            fixedSize: const Size.fromWidth(80),
+
+                          ),
+                          onPressed: () {
+                            Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Activity()),
+                            );
+                          },
+                          child: Row(
+                            children: const [
+                              Text('Follow',
+                                  textAlign: TextAlign.center),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                     const VerticalSpace(),

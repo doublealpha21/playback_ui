@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/activity/connect_contacts.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
@@ -200,8 +201,8 @@ class Message2 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Container(
-                          width: 210,
-                          height: 107,
+                          width: 240,
+                          height: 127,
                           color: const Color(0xff1E81C9),
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
@@ -216,14 +217,21 @@ class Message2 extends StatelessWidget {
                                     fontWeight: FontWeight.w400,
                                   )),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: const [
-                                  Text(
-                                    '10:22 AM',
-                                    style: TextStyle(
-                                      color: ColorResources.White,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w400,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children:  [
+                                  TextButton(
+                                    onPressed: (){
+                                      Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) => ConnectContacts()),
+                                      );
+                                    },
+                                    child: const Text(
+                                      '10:22 AM',
+                                      style: TextStyle(
+                                        color: ColorResources.Black,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w400,
+                                      ),
                                     ),
                                   ),
                                   SizedBox(width: 2),

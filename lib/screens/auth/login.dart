@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/auth/onboard1.dart';
+import 'package:playback_ui/screens/auth/sign_up.dart';
+import 'package:playback_ui/screens/home/home_logged_in.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -13,9 +16,9 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorResources.Black,
-       appBar: const CommonAppBar(
-         title: 'Back',
-       ),
+      appBar: const CommonAppBar(
+        title: 'Back',
+      ),
       body: Column(
         children: [
           Expanded(
@@ -41,27 +44,61 @@ class Login extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const [
-                        Icon(AntDesign.checkcircle,color: Color(0xFF202125)),
+                        Icon(AntDesign.checkcircle, color: Color(0xFF202125)),
                         SizedBox(width: 5),
-                        Text('Remember Me',
+                        Text(
+                          'Remember Me',
                           style: TextStyle(
                             color: Color(0xff939393),
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
-                          ),   ),
+                          ),
+                        ),
                       ],
                     ),
-                    const Text('Forgot Password?',
+                    const Text(
+                      'Forgot Password?',
                       style: TextStyle(
-                      color: Color(0xff2F80ED),
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16,
-                    ),)
+                        color: Color(0xff2F80ED),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                      ),
+                    )
                   ],
                 ),
                 const VerticalSpace(),
-                const CustomButton(hint: 'Log in',
-                    Colour: Color(0xFFF80C7D)),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeLoggedIn()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: ColorResources.PrimaryPink,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6.0),
+                      ),
+                      elevation: 0.0),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Log In',
+                            style: const TextStyle(
+                              fontSize: 16.0,
+                              color: ColorResources.White,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 const VerticalSpace(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -96,26 +133,29 @@ class Login extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text('Don\'t have an account ?',
-              style: TextStyle(
-                fontSize: 13,
-                color: ColorResources.White,
-                fontWeight: FontWeight.w400
-              ),),
-              Text(' Sign up',
+            children:  [
+            const   Text(
+                'Don\'t have an account ?',
+                style: TextStyle(
+                    fontSize: 13,
+                    color: ColorResources.White,
+                    fontWeight: FontWeight.w400),
+              ),
+              TextButton(
+                onPressed: (){Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SignUp()),
+                );},
+               child: Text(  ' Sign up',
                 style: TextStyle(
                     fontSize: 13,
                     color: Colors.blue,
-                    fontWeight: FontWeight.w400
-                ),)
+                    fontWeight: FontWeight.w400),),
+              )
             ],
           ),
           const VerticalSpace()
-
         ],
       ),
     );
   }
-
 }

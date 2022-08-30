@@ -3,11 +3,11 @@ import'package:playback_ui/utils/colors.dart';
 import 'package:expansion_tile_card/expansion_tile_card.dart';
 
 
-class FaqShowBox extends StatelessWidget {
+class CardExpansion extends StatelessWidget {
   final String title;
   final String textData;
 
-  const FaqShowBox({
+  const CardExpansion({
     Key? key,
     required this.title,
     required this.textData,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/auth/onboard3.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/utils/textfield.dart';
@@ -189,7 +190,11 @@ class Onboard2 extends StatelessWidget {
 
             const SizedBox(height: 80),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: (){
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Onboard3()),
+                );
+              },
               style: ElevatedButton.styleFrom(
                   primary:  const Color(0xff583FB9),
                   shape: RoundedRectangleBorder(

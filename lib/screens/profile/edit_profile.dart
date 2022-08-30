@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/profile/my_profile.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
@@ -116,13 +117,20 @@ class EditProfile extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),),
                 Row(
-                  children: const [
-                    Text('Luz Anzo1',
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                      ),),
+                  children: [
+                    TextButton(
+                      onPressed: (){
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => MyProfile()),
+                        );
+                      },
+                      child: const Text('Luz Anzo1',
+                        style: TextStyle(
+                          color: ColorResources.PrimaryGreen,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                        ),),
+                    ),
                     Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
                   ],
                 )

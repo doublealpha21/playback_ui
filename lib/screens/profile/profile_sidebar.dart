@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/profile/my_profile.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -66,19 +67,26 @@ class ProfileSidebar extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.person_add_alt_outlined,
                           color: ColorResources.White,
                           size: 25,
                         ),
                         HorizontalSpace(),
-                        Text(
-                          'Manage Account',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                        TextButton(
+                          onPressed: (){
+                            Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => MyProfile()),
+                            );
+                          },
+                          child: Text(
+                            'Manage Account',
+                            style: TextStyle(
+                              color: ColorResources.PrimaryGreen,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
                         )
                       ],

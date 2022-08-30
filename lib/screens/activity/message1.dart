@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/activity/message2.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -61,7 +62,7 @@ class Message1 extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(width: 200),
+              const SizedBox(width: 120),
               const Icon(Icons.menu)
             ],
           ),
@@ -260,16 +261,24 @@ class Message1 extends StatelessWidget {
                           const HorizontalSpace(),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Brandon Olam',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w400,
+                            children:  [
+                              TextButton(
+                                onPressed: (){
+                                  Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) => const Message2()),
+                                  );
+                                } ,
+                                child: const Text(
+                                  'Brandon Olam',
+                                  style: TextStyle(
+                                    color: ColorResources.PrimaryGreen,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                 ),
+
                               ),
-                              Text(
+                              const Text(
                                 'Are you ok ? Call me Please',
                                 style: TextStyle(
                                   color: ColorResources.GreyText,

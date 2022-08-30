@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/home/home_logged_in.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -98,7 +99,7 @@ class Onboard3 extends StatelessWidget {
       body: Padding(padding: const EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children:const [
+        children:  [
           Text(
             'Tell me your name\nplease?',
             style: TextStyle(
@@ -120,7 +121,40 @@ class Onboard3 extends StatelessWidget {
           Custom_Textfield(hint: 'Input your @username'),
           VerticalSpace(),
           VerticalSpace(),
-          CustomButton(hint: 'Finish', Colour: Color(0xff863BBE))
+
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeLoggedIn()),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+                primary: ColorResources.PrimaryPurple,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(6.0),
+                ),
+                elevation: 0.0),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Finish',
+                      style: const TextStyle(
+                        fontSize: 16.0,
+                        color: ColorResources.White,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
+
         ],
       )),
     );

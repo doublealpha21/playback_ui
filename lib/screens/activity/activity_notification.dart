@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/activity/message1.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -207,11 +208,18 @@ class ActivityNotification extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    const SizedBox(width: 75),
-                    const Icon(
-                      Icons.arrow_forward_ios,
-                      color: ColorResources.White,
-                      size: 20,
+                    const SizedBox(width: 50),
+                    IconButton(
+                      onPressed: (){
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Message1()),
+                        );
+                      },
+                      icon: Icon(
+                        Icons.arrow_forward_ios,
+                        color: ColorResources.PrimaryGreen,
+                        size: 20,
+                      ),
                     )
                   ],
                 ),

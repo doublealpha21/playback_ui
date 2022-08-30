@@ -4,18 +4,29 @@ import 'package:playback_ui/utils/colors.dart';
 class CustomButton extends StatelessWidget {
   final String hint;
   final Color Colour;
-  const CustomButton({Key? key,required this.hint,required this.Colour}) : super(key: key);
+  // final Navigator Route;
+
+  const CustomButton(
+      {Key? key, required this.hint,
+        required this.Colour,
+        // required this.Route
+      })
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(builder: (context) => Route),
+        // );
+      },
       style: ElevatedButton.styleFrom(
-          primary:  Colour,
+          primary: Colour,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(6.0),
           ),
-
           elevation: 0.0),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16.0),

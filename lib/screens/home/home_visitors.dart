@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/auth/login.dart';
+import 'package:playback_ui/screens/home/search_view.dart';
 import 'package:playback_ui/utils/colors.dart';
 
 class HomeVisitors extends StatefulWidget {
@@ -12,7 +14,7 @@ class _HomeVisitorsState extends State<HomeVisitors> {
   static const List<String> _filters = [
     'Trending',
     'Popular',
-    'Popular',
+    '#music',
     'Popular',
     'Popular',
     'Popular',
@@ -36,21 +38,29 @@ class _HomeVisitorsState extends State<HomeVisitors> {
         ),
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
+            },
             child: const Text(
               'Sign Up',
               style: TextStyle(
-                color: ColorResources.White,
+                color: ColorResources.PrimaryGreen,
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
               ),
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SearchView()),
+              );
+            },
             icon: const Icon(
               Icons.search,
-              color: ColorResources.White,
+              color: ColorResources.PrimaryGreen,
             ),
           ),
         ],
@@ -67,7 +77,7 @@ class _HomeVisitorsState extends State<HomeVisitors> {
                       color: Colors.grey,
                     ),
                     shape: BoxShape.circle,
-                    color: Colors.blueGrey,
+                    color: Color(0xff2D2D2D),
                   ),
                   padding: const EdgeInsets.all(8.0),
                   margin: const EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 4.0),
@@ -102,13 +112,13 @@ class _HomeVisitorsState extends State<HomeVisitors> {
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: _selectedFilter == index
-                                    ? Colors.grey
-                                    : Colors.green,
+                                    ? Colors.black
+                                    : Colors.white,
                               ),
                               borderRadius: BorderRadius.circular(16.0),
                               color: _selectedFilter == index
-                                  ? Colors.grey
-                                  : Colors.blueGrey,
+                                  ? Color(0xff2D2D2D)
+                                  : Colors.black,
                             ),
                             padding: const EdgeInsets.all(8.0),
                             margin: EdgeInsets.fromLTRB(

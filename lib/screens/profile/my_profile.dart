@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/profile/settings_screen.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -29,7 +30,7 @@ class MyProfile extends StatelessWidget {
                         decoration: const BoxDecoration(
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.all(Radius.circular(9)),
-                            color: ColorResources.PrimaryGreen),
+                            color: ColorResources.PrimaryPurple),
                       ),
                       const HorizontalSpace(),
                       Column(
@@ -91,12 +92,16 @@ class MyProfile extends StatelessWidget {
                       //   ),
                       // )
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Settings_Screen()),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: const Color(0xff1C1C1C),
+                          primary: ColorResources.PrimaryGreen,
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(114),
@@ -329,33 +334,33 @@ class MyProfile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Column(
-                    children: [
-                      Expanded(
-                        child: GridView.count(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 10,
-                          children: [
-                            Container(
-                              height: 195.48,
-                              width: 122.26,
-                              color: ColorResources.PrimaryGreen,
-                            ),
-                            Container(
-                              height: 195.48,
-                              width: 122.26,
-                              color: ColorResources.PrimaryPink,
-                            ),
-                            Container(
-                              height: 195.48,
-                              width: 122.26,
-                              color: ColorResources.PrimaryPurple,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )
+                  // Column(
+                  //   children: [
+                  //     Expanded(
+                  //       child: GridView.count(
+                  //         crossAxisCount: 2,
+                  //         crossAxisSpacing: 10,
+                  //         children: [
+                  //           Container(
+                  //             height: 195.48,
+                  //             width: 122.26,
+                  //             color: ColorResources.PrimaryGreen,
+                  //           ),
+                  //           Container(
+                  //             height: 195.48,
+                  //             width: 122.26,
+                  //             color: ColorResources.PrimaryPink,
+                  //           ),
+                  //           Container(
+                  //             height: 195.48,
+                  //             width: 122.26,
+                  //             color: ColorResources.PrimaryPurple,
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ],
+                  // )
                 ],
               )
             ],

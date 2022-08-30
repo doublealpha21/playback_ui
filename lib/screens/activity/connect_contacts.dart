@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/profile/edit_profile.dart';
+import 'package:playback_ui/screens/profile/profile_sidebar.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
@@ -96,13 +98,16 @@ class ConnectContacts extends StatelessWidget {
                     ),
                     const SizedBox(width: 75),
                     ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => ProfileSidebar()),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                         elevation: 1,
-                        primary: ColorResources.PrimaryPink,
+                        primary: ColorResources.PrimaryGreen,
                         fixedSize: const Size.fromWidth(80),
-
                       ),
-                      onPressed: () {},
                       child: Row(
                         children: const [
                           Text('Follow',
