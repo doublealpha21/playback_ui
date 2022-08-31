@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/auth/onboard2.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
-import 'package:playback_ui/utils/textfield.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class Onboard1 extends StatelessWidget {
   const Onboard1({Key? key}) : super(key: key);
@@ -129,24 +125,27 @@ class Onboard1 extends StatelessWidget {
                 Expanded(
                   child: Column(
                     children: [
-                      Image.asset('images/Frame 10.png'),
+                      Image.asset('images/frame_10.png'),
                       const SizedBox(height: 5),
-                      const Text('Male',
+                      const Text(
+                        'Male',
                         style: TextStyle(
-                          color:  Color(0xfffb3b3b3),
+                          color: Color(0xfffb3b3b3),
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
-                      ),
-                      )],
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 const HorizontalSpace(),
                 Expanded(
                     child: Column(
                   children: [
-                    Image.asset('images/Frame 11.png'),
+                    Image.asset('images/frame_11.png'),
                     const SizedBox(height: 5),
-                    const Text('Female',
+                    const Text(
+                      'Female',
                       style: TextStyle(
                         color: Color(0xffff80c7d),
                         fontSize: 20,
@@ -163,12 +162,13 @@ class Onboard1 extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Onboard2()),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Onboard2()),
                 );
               },
               style: ElevatedButton.styleFrom(
-                  primary:  const Color(0xffF80C7D),
+                  backgroundColor: const Color(0xffF80C7D),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(6.0),
                   ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:playback_ui/screens/home/home_logged_in.dart';
-import 'package:playback_ui/screens/home/home_visitors.dart';
-import 'package:playback_ui/screens/home/search_results.dart';
+import 'package:playback_ui/screens/payment/bank_account.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Playback UI',
       debugShowCheckedModeBanner: false,
-      home: HomeVisitors(),
+      home: BankAccount(),
     );
   }
 }
