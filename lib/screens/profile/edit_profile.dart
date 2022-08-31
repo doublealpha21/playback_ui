@@ -29,11 +29,12 @@ class EditProfile extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border:
-                          Border.all(width: 1, color: ColorResources.White),
+                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: Image.network('https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_960_720.jpg',
-                        width: 72,
-                        height: 72,
+                        child: Image.network(
+                          'https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_960_720.jpg',
+                          width: 72,
+                          height: 72,
                         )
                         // const Text(
                         //   '1',
@@ -44,16 +45,16 @@ class EditProfile extends StatelessWidget {
                         //     fontWeight: FontWeight.bold,
                         //   ),
                         // )
-                    ),
+                        ),
                     const VerticalSpace(),
-                    const Text('Change Photo',
+                    const Text(
+                      'Change Photo',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                     )
-
                   ],
                 ),
                 Column(
@@ -65,11 +66,12 @@ class EditProfile extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border:
-                          Border.all(width: 1, color: ColorResources.White),
+                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: Image.network('https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_960_720.jpg',
-                        width: 72,
-                        height: 72,
+                        child: Image.network(
+                          'https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_960_720.jpg',
+                          width: 72,
+                          height: 72,
                         )
                         // const Text(
                         //   '1',
@@ -80,27 +82,29 @@ class EditProfile extends StatelessWidget {
                         //     fontWeight: FontWeight.bold,
                         //   ),
                         // )
-                    ),
+                        ),
                     const VerticalSpace(),
-                    const Text('Change Background',
+                    const Text(
+                      'Change Background',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                     )
-
                   ],
                 ),
               ],
             ),
             const SizedBox(height: 40),
-            const Text('About You',
+            const Text(
+              'About You',
               style: TextStyle(
                 color: ColorResources.White,
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
-              ),),
+              ),
+            ),
             const SizedBox(height: 10),
             Container(
               height: 2,
@@ -110,28 +114,36 @@ class EditProfile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Name',
+                const Text(
+                  'Name',
                   style: TextStyle(
                     color: ColorResources.White,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 Row(
                   children: [
                     TextButton(
-                      onPressed: (){
-                        Navigator.push(context,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
                           MaterialPageRoute(builder: (context) => MyProfile()),
                         );
                       },
-                      child: const Text('Luz Anzo1',
+                      child: const Text(
+                        'Luz Anzo1',
                         style: TextStyle(
                           color: ColorResources.PrimaryGreen,
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
-                        ),),
+                        ),
+                      ),
                     ),
-                    Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorResources.White,
+                    )
                   ],
                 )
               ],
@@ -140,21 +152,28 @@ class EditProfile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Username',
+                const Text(
+                  'Username',
                   style: TextStyle(
                     color: ColorResources.White,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 Row(
                   children: const [
-                    Text('Luz Anzo1',
+                    Text(
+                      'Luz Anzo1',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                      ),),
-                    Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorResources.White,
+                    )
                   ],
                 )
               ],
@@ -163,32 +182,41 @@ class EditProfile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Bio',
+                const Text(
+                  'Bio',
                   style: TextStyle(
                     color: ColorResources.White,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 Row(
                   children: const [
-                    Text('Add a Bio',
+                    Text(
+                      'Add a Bio',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                      ),),
-                    Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorResources.White,
+                    )
                   ],
                 )
               ],
             ),
             const SizedBox(height: 50),
-            const Text('Social',
+            const Text(
+              'Social',
               style: TextStyle(
                 color: ColorResources.White,
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
-              ),),
+              ),
+            ),
             const VerticalSpace(),
             Container(
               height: 2,
@@ -198,21 +226,28 @@ class EditProfile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Instagram',
+                const Text(
+                  'Instagram',
                   style: TextStyle(
                     color: ColorResources.White,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 Row(
                   children: const [
-                    Text('Add Instagram',
+                    Text(
+                      'Add Instagram',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                      ),),
-                    Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorResources.White,
+                    )
                   ],
                 )
               ],
@@ -221,21 +256,28 @@ class EditProfile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Youtube',
+                const Text(
+                  'Youtube',
                   style: TextStyle(
                     color: ColorResources.White,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 Row(
                   children: const [
-                    Text('Add Youtube',
+                    Text(
+                      'Add Youtube',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                      ),),
-                    Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorResources.White,
+                    )
                   ],
                 )
               ],
@@ -244,26 +286,32 @@ class EditProfile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('TikTok',
+                const Text(
+                  'TikTok',
                   style: TextStyle(
                     color: ColorResources.White,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 Row(
                   children: const [
-                    Text('Add Tiktok',
+                    Text(
+                      'Add Tiktok',
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                      ),),
-                    Icon(Icons.arrow_forward_ios,color: ColorResources.White,)
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorResources.White,
+                    )
                   ],
                 )
               ],
             ),
-
           ],
         ),
       ),

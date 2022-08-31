@@ -39,7 +39,8 @@ class _HomeVisitorsState extends State<HomeVisitors> {
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.push(context,
+              Navigator.push(
+                context,
                 MaterialPageRoute(builder: (context) => Login()),
               );
             },
@@ -54,7 +55,8 @@ class _HomeVisitorsState extends State<HomeVisitors> {
           ),
           IconButton(
             onPressed: () {
-              Navigator.push(context,
+              Navigator.push(
+                context,
                 MaterialPageRoute(builder: (context) => SearchView()),
               );
             },

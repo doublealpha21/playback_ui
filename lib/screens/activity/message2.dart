@@ -221,8 +221,11 @@ class Message2 extends StatelessWidget {
                                 children:  [
                                   TextButton(
                                     onPressed: (){
-                                      Navigator.push(context,
-                                        MaterialPageRoute(builder: (context) => ConnectContacts()),
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const ConnectContacts()),
                                       );
                                     },
                                     child: const Text(
@@ -234,8 +237,8 @@ class Message2 extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(width: 2),
-                                  Icon(
+                                  const SizedBox(width: 2),
+                                  const Icon(
                                     AntDesign.checkcircle,
                                     color: ColorResources.PrimaryGreen,
                                   )

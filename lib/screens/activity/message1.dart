@@ -261,13 +261,15 @@ class Message1 extends StatelessWidget {
                           const HorizontalSpace(),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children:  [
+                            children: [
                               TextButton(
-                                onPressed: (){
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => const Message2()),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Message2()),
                                   );
-                                } ,
+                                },
                                 child: const Text(
                                   'Brandon Olam',
                                   style: TextStyle(
@@ -276,7 +278,6 @@ class Message1 extends StatelessWidget {
                                     fontWeight: FontWeight.w400,
                                   ),
                                 ),
-
                               ),
                               const Text(
                                 'Are you ok ? Call me Please',

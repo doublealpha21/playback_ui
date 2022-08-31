@@ -39,11 +39,11 @@ class SignUp extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Onboard1()),
+                  MaterialPageRoute(builder: (context) => const Onboard1()),
                 );
               },
               style: ElevatedButton.styleFrom(
-                  primary: ColorResources.PrimaryPink,
+                  backgroundColor: ColorResources.PrimaryPink,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(6.0),
                   ),
@@ -51,11 +51,11 @@ class SignUp extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: Row(
-                  children: [
+                  children: const [
                     Expanded(
                       child: Text(
                         'Sign Up',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16.0,
                           color: ColorResources.White,
                           fontWeight: FontWeight.w600,

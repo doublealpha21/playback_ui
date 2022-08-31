@@ -39,7 +39,6 @@ class MessageSelected extends StatelessWidget {
                   )
                 ],
               )
-
             ],
           ),
         ),

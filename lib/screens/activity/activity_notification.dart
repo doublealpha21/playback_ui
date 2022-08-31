@@ -211,11 +211,13 @@ class ActivityNotification extends StatelessWidget {
                     const SizedBox(width: 50),
                     IconButton(
                       onPressed: (){
-                        Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Message1()),
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Message1()),
                         );
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_forward_ios,
                         color: ColorResources.PrimaryGreen,
                         size: 20,

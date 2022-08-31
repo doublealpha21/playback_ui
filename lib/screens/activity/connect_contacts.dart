@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:playback_ui/screens/profile/edit_profile.dart';
 import 'package:playback_ui/screens/profile/profile_sidebar.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
@@ -99,19 +98,20 @@ class ConnectContacts extends StatelessWidget {
                     const SizedBox(width: 75),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => ProfileSidebar()),
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ProfileSidebar()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
                         elevation: 1,
-                        primary: ColorResources.PrimaryGreen,
+                        backgroundColor: ColorResources.PrimaryGreen,
                         fixedSize: const Size.fromWidth(80),
                       ),
                       child: Row(
                         children: const [
-                          Text('Follow',
-                          textAlign: TextAlign.center),
+                          Text('Follow', textAlign: TextAlign.center),
                         ],
                       ),
                     ),
@@ -164,15 +164,13 @@ class ConnectContacts extends StatelessWidget {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 1,
-                        primary: ColorResources.PrimaryPink,
+                        backgroundColor: ColorResources.PrimaryPink,
                         fixedSize: const Size.fromWidth(80),
-
                       ),
                       onPressed: () {},
                       child: Row(
                         children: const [
-                          Text('Follow',
-                          textAlign: TextAlign.center),
+                          Text('Follow', textAlign: TextAlign.center),
                         ],
                       ),
                     ),
@@ -225,15 +223,13 @@ class ConnectContacts extends StatelessWidget {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 1,
-                        primary: ColorResources.PrimaryPink,
+                        backgroundColor: ColorResources.PrimaryPink,
                         fixedSize: const Size.fromWidth(80),
-
                       ),
                       onPressed: () {},
                       child: Row(
                         children: const [
-                          Text('Follow',
-                          textAlign: TextAlign.center),
+                          Text('Follow', textAlign: TextAlign.center),
                         ],
                       ),
                     ),
@@ -286,15 +282,13 @@ class ConnectContacts extends StatelessWidget {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 1,
-                        primary: ColorResources.PrimaryPink,
+                        backgroundColor: ColorResources.PrimaryPink,
                         fixedSize: const Size.fromWidth(80),
-
                       ),
                       onPressed: () {},
                       child: Row(
                         children: const [
-                          Text('Follow',
-                          textAlign: TextAlign.center),
+                          Text('Follow', textAlign: TextAlign.center),
                         ],
                       ),
                     ),
@@ -347,15 +341,13 @@ class ConnectContacts extends StatelessWidget {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 1,
-                        primary: ColorResources.PrimaryPink,
+                        backgroundColor: ColorResources.PrimaryPink,
                         fixedSize: const Size.fromWidth(80),
-
                       ),
                       onPressed: () {},
                       child: Row(
                         children: const [
-                          Text('Follow',
-                          textAlign: TextAlign.center),
+                          Text('Follow', textAlign: TextAlign.center),
                         ],
                       ),
                     ),

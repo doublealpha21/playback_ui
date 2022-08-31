@@ -19,11 +19,13 @@ class SearchView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const Icon(Icons.arrow_back_ios_new_rounded,
-                color: ColorResources.White,),
+              const Icon(
+                Icons.arrow_back_ios_new_rounded,
+                color: ColorResources.White,
+              ),
               Expanded(
                 child: TextField(
-                  decoration:const InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'Search',
                     fillColor: Color(0xff202125),
                     hintStyle: TextStyle(
@@ -32,14 +34,11 @@ class SearchView extends StatelessWidget {
                     // Color(0xff787878),
                     filled: true,
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(6.0))
-                    ),
+                        borderRadius: BorderRadius.all(Radius.circular(6.0))),
                   ),
-                  onTap: (){},
+                  onTap: () {},
                   enabled: true,
-                  style: const TextStyle(
-                      color: ColorResources.White
-                  ),
+                  style: const TextStyle(color: ColorResources.White),
                 ),
               ),
               // Container(
@@ -74,43 +73,57 @@ class SearchView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Icon(Icons.search_rounded,color: ColorResources.White),
-              Text('momeents',
+              Icon(Icons.search_rounded, color: ColorResources.White),
+              Text(
+                'momeents',
                 style: TextStyle(
                   color: ColorResources.White,
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
+              Icon(
+                MaterialCommunityIcons.arrow_top_left,
+                color: ColorResources.White,
+              )
             ],
           ),
           const VerticalSpace(),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Icon(Icons.search_rounded,color: ColorResources.White),
-              Text('momeents',
+              Icon(Icons.search_rounded, color: ColorResources.White),
+              Text(
+                'momeents',
                 style: TextStyle(
                   color: ColorResources.White,
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
+              Icon(
+                MaterialCommunityIcons.arrow_top_left,
+                color: ColorResources.White,
+              )
             ],
           ),
           const VerticalSpace(),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Icon(Icons.search_rounded,color: ColorResources.White),
-              Text('momeents',
+              Icon(Icons.search_rounded, color: ColorResources.White),
+              Text(
+                'momeents',
                 style: TextStyle(
                   color: ColorResources.White,
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              Icon(MaterialCommunityIcons.arrow_top_left,color: ColorResources.White,)
+              Icon(
+                MaterialCommunityIcons.arrow_top_left,
+                color: ColorResources.White,
+              )
             ],
           ),
           const VerticalSpace(),

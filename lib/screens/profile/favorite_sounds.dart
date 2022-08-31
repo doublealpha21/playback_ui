@@ -6,7 +6,6 @@ import 'package:playback_ui/widgets/common_app_bar.dart';
 class FavoriteSounds extends StatelessWidget {
   const FavoriteSounds({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,13 +99,13 @@ class FavoriteSounds extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              height:64,
+                              height: 64,
                               width: 64,
                               // color: const Color(0xffF80C7D),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border:
-                                Border.all(width: 1, color: ColorResources.White),
+                                border: Border.all(
+                                    width: 1, color: ColorResources.White),
                               ),
                               child: const Text(
                                 '1',
@@ -146,7 +145,6 @@ class FavoriteSounds extends StatelessWidget {
                               ),
                             ],
                           )
-
                         ],
                       ),
                       const VerticalSpace(),
@@ -158,8 +156,8 @@ class FavoriteSounds extends StatelessWidget {
                               // color: const Color(0xffF80C7D),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border:
-                                Border.all(width: 1, color: ColorResources.White),
+                                border: Border.all(
+                                    width: 1, color: ColorResources.White),
                               ),
                               child: const Text(
                                 '1',
@@ -199,7 +197,6 @@ class FavoriteSounds extends StatelessWidget {
                               ),
                             ],
                           )
-
                         ],
                       ),
                       const VerticalSpace(),
@@ -211,8 +208,8 @@ class FavoriteSounds extends StatelessWidget {
                               // color: const Color(0xffF80C7D),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border:
-                                Border.all(width: 1, color: ColorResources.White),
+                                border: Border.all(
+                                    width: 1, color: ColorResources.White),
                               ),
                               child: const Text(
                                 '1',
@@ -252,7 +249,6 @@ class FavoriteSounds extends StatelessWidget {
                               ),
                             ],
                           )
-
                         ],
                       ),
                       const VerticalSpace(),
@@ -264,8 +260,8 @@ class FavoriteSounds extends StatelessWidget {
                               // color: const Color(0xffF80C7D),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border:
-                                Border.all(width: 1, color: ColorResources.White),
+                                border: Border.all(
+                                    width: 1, color: ColorResources.White),
                               ),
                               child: const Text(
                                 '1',
@@ -305,7 +301,6 @@ class FavoriteSounds extends StatelessWidget {
                               ),
                             ],
                           )
-
                         ],
                       ),
                     ],

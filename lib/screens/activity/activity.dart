@@ -123,11 +123,14 @@ class Activity extends StatelessWidget {
                       const SizedBox(width: 50),
                       IconButton(
                         onPressed: (){
-                          Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => ActivityNotification()),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ActivityNotification()),
                           );
                         },
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: ColorResources.PrimaryGreen,
                           size: 20,

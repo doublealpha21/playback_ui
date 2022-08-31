@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/home/home_logged_in.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/utils/textfield.dart';
 
@@ -100,56 +99,56 @@ class Onboard3 extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children:  [
-          Text(
-            'Tell me your name\nplease?',
-            style: TextStyle(
-              color: ColorResources.White,
-              fontSize: 32,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-          VerticalSpace(),
-          Text(
-            'This help your friend to, find your\nPlayBack account',
-            style: TextStyle(
-              color: Color(0xFFF3F7FC),
-              fontSize: 18,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          VerticalSpace(),
-          Custom_Textfield(hint: 'Input your @username'),
-          VerticalSpace(),
-          VerticalSpace(),
-
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => HomeLoggedIn()),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-                primary: ColorResources.PrimaryPurple,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(6.0),
+              const Text(
+                'Tell me your name\nplease?',
+                style: TextStyle(
+                  color: ColorResources.White,
+                  fontSize: 32,
+                  fontWeight: FontWeight.w700,
                 ),
-                elevation: 0.0),
+              ),
+              const VerticalSpace(),
+              const Text(
+                'This help your friend to, find your\nPlayBack account',
+                style: TextStyle(
+                  color: Color(0xFFF3F7FC),
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              const VerticalSpace(),
+              const Custom_Textfield(hint: 'Input your @username'),
+              const VerticalSpace(),
+              const VerticalSpace(),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomeLoggedIn()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: ColorResources.PrimaryPurple,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6.0),
+                    ),
+                    elevation: 0.0),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      'Finish',
-                      style: const TextStyle(
-                        fontSize: 16.0,
-                        color: ColorResources.White,
-                        fontWeight: FontWeight.w600,
+                children: const [
+                      Expanded(
+                        child: Text(
+                          'Finish',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                            color: ColorResources.White,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
                 ],
               ),
             ),

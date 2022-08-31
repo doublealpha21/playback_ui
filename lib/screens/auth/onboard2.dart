@@ -123,10 +123,9 @@ class Onboard2 extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0xff583FB9),
+                  backgroundColor: const Color(0xff583FB9),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)
-                  ),
+                      borderRadius: BorderRadius.circular(6)),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(14),
@@ -142,12 +141,10 @@ class Onboard2 extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0xff583FB9),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)
-                  ),
-                  fixedSize:const Size.fromWidth(100)
-                ),
+                    backgroundColor: const Color(0xff583FB9),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6)),
+                    fixedSize: const Size.fromWidth(100)),
                 child: Padding(
                   padding: const EdgeInsets.all(14),
                   child: Row(
@@ -162,10 +159,9 @@ class Onboard2 extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0xff583FB9),
+                  backgroundColor: const Color(0xff583FB9),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)
-                  ),
+                      borderRadius: BorderRadius.circular(6)),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(14),
@@ -180,7 +176,7 @@ class Onboard2 extends StatelessWidget {
             const VerticalSpace(),
             ElevatedButton(onPressed: (){},
                 style: ElevatedButton.styleFrom(
-                    primary:  const Color(0xff222226),
+                    backgroundColor: const Color(0xff222226),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(6.0),
                     ),
@@ -191,12 +187,13 @@ class Onboard2 extends StatelessWidget {
             const SizedBox(height: 80),
             ElevatedButton(
               onPressed: (){
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Onboard3()),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Onboard3()),
                 );
               },
               style: ElevatedButton.styleFrom(
-                  primary:  const Color(0xff583FB9),
+                  backgroundColor: const Color(0xff583FB9),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(6.0),
                   ),

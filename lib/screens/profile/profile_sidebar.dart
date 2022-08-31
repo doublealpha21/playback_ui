@@ -75,9 +75,11 @@ class ProfileSidebar extends StatelessWidget {
                         ),
                         HorizontalSpace(),
                         TextButton(
-                          onPressed: (){
-                            Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => MyProfile()),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MyProfile()),
                             );
                           },
                           child: Text(

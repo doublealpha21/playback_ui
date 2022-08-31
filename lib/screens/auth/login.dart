@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:playback_ui/screens/auth/onboard1.dart';
 import 'package:playback_ui/screens/auth/sign_up.dart';
 import 'package:playback_ui/screens/home/home_logged_in.dart';
 import 'package:playback_ui/utils/colors.dart';
@@ -71,11 +70,12 @@ class Login extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomeLoggedIn()),
+                      MaterialPageRoute(
+                          builder: (context) => const HomeLoggedIn()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: ColorResources.PrimaryPink,
+                      backgroundColor: ColorResources.PrimaryPink,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(6.0),
                       ),
@@ -83,11 +83,11 @@ class Login extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: Row(
-                      children: [
+                      children: const [
                         Expanded(
                           child: Text(
                             'Log In',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 16.0,
                               color: ColorResources.White,
                               fontWeight: FontWeight.w600,
@@ -142,14 +142,17 @@ class Login extends StatelessWidget {
                     fontWeight: FontWeight.w400),
               ),
               TextButton(
-                onPressed: (){Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SignUp()),
-                );},
-               child: Text(  ' Sign up',
-                style: TextStyle(
-                    fontSize: 13,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w400),),
+                onPressed: (){Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SignUp()),
+                  );},
+                child: const Text(
+                  'Sign up',
+                  style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.w400),
+                ),
               )
             ],
           ),

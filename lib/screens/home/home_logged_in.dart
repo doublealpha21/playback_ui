@@ -39,9 +39,11 @@ class HomeLoggedIn extends StatefulWidget {
         actions :[
           IconButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SearchResults()),
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SearchResults()),
+                );
             },
             icon: const Icon(
               Icons.search,
@@ -49,9 +51,11 @@ class HomeLoggedIn extends StatefulWidget {
             ),
           ),
           IconButton(onPressed: (){
-            Navigator.push(context,
-              MaterialPageRoute(builder: (context) => ConnectContacts()),
-            );
+            Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ConnectContacts()),
+                );
           },
               icon:const Icon(
                 Icons.person_add_alt,

@@ -7,7 +7,6 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 class MessageDelete extends StatelessWidget {
   const MessageDelete({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +39,6 @@ class MessageDelete extends StatelessWidget {
                   )
                 ],
               )
-
             ],
           ),
         ),
@@ -64,9 +62,9 @@ class MessageDelete extends StatelessWidget {
                         children: [
                           const Text(
                               ' I really don\'t get what all the\n'
-                                  'fuss is about. She could never'
-                                  'compare to Cindy, Christy'
-                                  'and other famous models.',
+                              'fuss is about. She could never'
+                              'compare to Cindy, Christy'
+                              'and other famous models.',
                               style: TextStyle(
                                 color: ColorResources.White,
                                 fontSize: 14,
@@ -144,9 +142,9 @@ class MessageDelete extends StatelessWidget {
                         children: [
                           const Text(
                               ' I really don\'t get what all the\n'
-                                  'fuss is about. She could never'
-                                  'compare to Cindy, Christy'
-                                  'and other famous models.',
+                              'fuss is about. She could never'
+                              'compare to Cindy, Christy'
+                              'and other famous models.',
                               style: TextStyle(
                                 color: ColorResources.White,
                                 fontSize: 14,
@@ -186,8 +184,8 @@ class MessageDelete extends StatelessWidget {
                             children: [
                               const Text(
                                   ' I really don\'t get what all the\n'
-                                      'fuss is about. She could never'
-                                      'compare to Cindy',
+                                  'fuss is about. She could never'
+                                  'compare to Cindy',
                                   style: TextStyle(
                                     color: ColorResources.White,
                                     fontSize: 14,

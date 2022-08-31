@@ -32,7 +32,8 @@ class Onboard1 extends StatelessWidget {
                 ),
               ],
             ),
-            Row( mainAxisAlignment: MainAxisAlignment.end,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Container(
                     height: 40,
@@ -40,39 +41,17 @@ class Onboard1 extends StatelessWidget {
                     // color: const Color(0xffF80C7D),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(
-                        width: 1,
-                        color: ColorResources.White
-                      ),
+                      border: Border.all(width: 1, color: ColorResources.White),
                     ),
-                    child: const Text('1',
-                      textAlign: TextAlign.center,
-                      style:  TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                ),
-                Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width: 1,
-                        color: Colors.white,
-                      ),
-                    ),
-                    child: const Text('2',
+                    child: const Text(
+                      '1',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
-                    )
-                ),
+                    )),
                 Container(
                     height: 40,
                     width: 40,
@@ -83,15 +62,34 @@ class Onboard1 extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    child: const Text('3',
+                    child: const Text(
+                      '2',
                       textAlign: TextAlign.center,
-                      style:  TextStyle(
+                      style: TextStyle(
                         color: ColorResources.White,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
-                    )
-                ),
+                    )),
+                Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.white,
+                      ),
+                    ),
+                    child: const Text(
+                      '3',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: ColorResources.White,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )),
               ],
             ),
           ],
@@ -154,7 +152,6 @@ class Onboard1 extends StatelessWidget {
                     )
                   ],
                 )),
-
               ],
             ),
             const SizedBox(
@@ -176,11 +173,11 @@ class Onboard1 extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: Row(
-                  children: const  [
+                  children: const [
                     Expanded(
                       child: Text(
                         'Next Step',
-                        style:  TextStyle(
+                        style: TextStyle(
                           fontSize: 16.0,
                           color: ColorResources.White,
                           fontWeight: FontWeight.w600,
@@ -188,8 +185,10 @@ class Onboard1 extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ),
-                    Icon(Icons.arrow_forward_ios_rounded,
-                      color:Colors.white ,)
+                    Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      color: Colors.white,
+                    )
                   ],
                 ),
               ),

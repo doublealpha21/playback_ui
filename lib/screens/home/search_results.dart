@@ -264,17 +264,17 @@ class SearchResults extends StatelessWidget {
                             elevation: 1,
                             primary: ColorResources.PrimaryPink,
                             fixedSize: const Size.fromWidth(80),
-
                           ),
                           onPressed: () {
-                            Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Activity()),
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Activity()),
                             );
                           },
                           child: Row(
                             children: const [
-                              Text('Follow',
-                                  textAlign: TextAlign.center),
+                              Text('Follow', textAlign: TextAlign.center),
                             ],
                           ),
                         ),
@@ -654,7 +654,8 @@ class SearchResults extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                          width: 1, color: ColorResources.White),
+                                          width: 1,
+                                          color: ColorResources.White),
                                     ),
                                     child: const Text(
                                       '1',
@@ -667,7 +668,7 @@ class SearchResults extends StatelessWidget {
                                     )),
                                 const SizedBox(width: 10),
                                 Column(
-                                  children:const [
+                                  children: const [
                                     Text(
                                       'Before you go',
                                       style: TextStyle(
@@ -705,7 +706,8 @@ class SearchResults extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                          width: 1, color: ColorResources.White),
+                                          width: 1,
+                                          color: ColorResources.White),
                                     ),
                                     child: const Text(
                                       '1',
@@ -718,7 +720,7 @@ class SearchResults extends StatelessWidget {
                                     )),
                                 const SizedBox(width: 10),
                                 Column(
-                                  children:const [
+                                  children: const [
                                     Text(
                                       'Before you go',
                                       style: TextStyle(
@@ -777,39 +779,46 @@ class SearchResults extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
-                        Text('#moments',
+                        Text(
+                          '#moments',
                           style: TextStyle(
                             color: ColorResources.White,
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                          ), ),
-                        Text('23k posts',
+                          ),
+                        ),
+                        Text(
+                          '23k posts',
                           style: TextStyle(
                             color: ColorResources.GreyText,
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                          ),)
+                          ),
+                        )
                       ],
                     ),
                     const VerticalSpace(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
-                        Text('#momentum',
+                        Text(
+                          '#momentum',
                           style: TextStyle(
                             color: ColorResources.White,
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                          ), ),
-                        Text('23k posts',
+                          ),
+                        ),
+                        Text(
+                          '23k posts',
                           style: TextStyle(
                             color: ColorResources.GreyText,
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                          ),)
+                          ),
+                        )
                       ],
                     ),
-
                   ],
                 ),
               ],

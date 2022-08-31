@@ -53,7 +53,7 @@ class Settings_Screen extends StatelessWidget {
                   ),
                   const VerticalSpace(),
                   Row(
-                    children:  [
+                    children: [
                       Icon(
                         Icons.perm_identity,
                         color: ColorResources.White,
@@ -61,9 +61,11 @@ class Settings_Screen extends StatelessWidget {
                       ),
                       HorizontalSpace(),
                       TextButton(
-                        onPressed: (){
-                          Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => OtherProfile()),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OtherProfile()),
                           );
                         },
                         child: Text(
@@ -312,7 +314,6 @@ class Settings_Screen extends StatelessWidget {
                 ),
               ),
             ],
-
           )
         ],
       ),
