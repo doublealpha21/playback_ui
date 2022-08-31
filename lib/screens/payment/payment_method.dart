@@ -5,7 +5,6 @@ import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class PaymentMethod extends StatelessWidget {
   const PaymentMethod({Key? key}) : super(key: key);
@@ -119,7 +118,7 @@ class PaymentMethod extends StatelessWidget {
               ],
             ),
             const VerticalSpace(),
-            const CustomButton(hint: 'Add', Colour: ColorResources.PrimaryPink)
+            const CustomButton(hint: 'Add', Colour: ColorResources.PrimaryPink),
           ],
         ),
       ),

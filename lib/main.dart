@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:playback_ui/screens/payment/bank_account.dart';
-import 'package:playback_ui/screens/payment/payment_method.dart';
+import 'package:playback_ui/screens/boost_videos/boost_videos4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Playback UI',
       debugShowCheckedModeBanner: false,
-      home: PaymentMethod(),
+      home: BoostVideos4(),
     );
   }
 }
