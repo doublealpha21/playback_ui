@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/payment/paypal_account.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/utils/textfield.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
@@ -58,9 +59,10 @@ class BankAccount extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // Navigator.push(context,
-                    //   MaterialPageRoute(builder: (context) => Settings_Screen()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PaypalAccount()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
