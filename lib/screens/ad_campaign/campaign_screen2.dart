@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/ad_campaign/campaign_screen3.dart';
+import 'package:playback_ui/screens/ad_campaign/campaign_screen7.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/utils/textfield.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
@@ -40,7 +41,13 @@ class CampaignScreen2 extends StatelessWidget {
                   ),
                   const VerticalSpace(),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const CampaignScreen7()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(6.0),

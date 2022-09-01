@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/ad_campaign/campaign_screen1.dart';
+import 'package:playback_ui/screens/ad_campaign/campaign_screen6.dart';
+import 'package:playback_ui/screens/ad_campaign/campaign_screen7.dart';
 import 'package:playback_ui/screens/boost_videos/boost_videos1.dart';
 import 'package:playback_ui/screens/boost_videos/boost_videos4.dart';
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Playback UI',
       debugShowCheckedModeBanner: false,
-      home: CampaignScreen1(),
+      home: CampaignScreen7(),
     );
   }
 }
