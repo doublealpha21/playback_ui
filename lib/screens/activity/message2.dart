@@ -29,17 +29,8 @@ class Message2 extends StatelessWidget {
                   // color: const Color(0xffF80C7D),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(width: 1, color: ColorResources.White),
                   ),
-                  child: const Text(
-                    '1',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )),
+                  child: Image.asset('images/profile_image.png')),
               const SizedBox(width: 20),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -202,7 +193,7 @@ class Message2 extends StatelessWidget {
                       children: [
                         Container(
                           width: 240,
-                          height: 127,
+                          height: 132,
                           color: const Color(0xff1E81C9),
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
@@ -220,18 +211,18 @@ class Message2 extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children:  [
                                   TextButton(
-                                    onPressed: (){
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const ConnectContacts()),
-                                      );
+                                    onPressed: () {
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(
+                                      //       builder: (context) =>
+                                      //           const ConnectContacts()),
+                                      // );
                                     },
                                     child: const Text(
                                       '10:22 AM',
                                       style: TextStyle(
-                                        color: ColorResources.Black,
+                                        color: ColorResources.White,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400,
                                       ),

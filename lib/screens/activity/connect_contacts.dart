@@ -61,18 +61,8 @@ class ConnectContacts extends StatelessWidget {
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border:
-                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: const Text(
-                          '1',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )),
+                        child: Image.asset('images/profile_image.png')),
                     const HorizontalSpace(),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,18 +116,8 @@ class ConnectContacts extends StatelessWidget {
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border:
-                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: const Text(
-                          '1',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )),
+                        child: Image.asset('images/profile_image.png')),
                     const HorizontalSpace(),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -185,18 +165,8 @@ class ConnectContacts extends StatelessWidget {
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border:
-                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: const Text(
-                          '1',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )),
+                        child: Image.asset('images/profile_image.png')),
                     const HorizontalSpace(),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -244,18 +214,8 @@ class ConnectContacts extends StatelessWidget {
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border:
-                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: const Text(
-                          '1',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )),
+                        child: Image.asset('images/profile_image.png')),
                     const HorizontalSpace(),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -303,18 +263,8 @@ class ConnectContacts extends StatelessWidget {
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border:
-                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: const Text(
-                          '1',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )),
+                        child: Image.asset('images/profile_image.png')),
                     const HorizontalSpace(),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

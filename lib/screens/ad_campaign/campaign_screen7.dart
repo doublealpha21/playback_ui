@@ -18,7 +18,7 @@ class CampaignScreen7 extends StatelessWidget {
             Row(
               children: [
                 SizedBox(
-                  height: 157,
+                  height: 177,
                   width: 99,
                   child: Column(
                     children: [
@@ -36,7 +36,7 @@ class CampaignScreen7 extends StatelessWidget {
                 ),
                 const HorizontalSpace(),
                 SizedBox(
-                  height: 157,
+                  height: 177,
                   width: 99,
                   child: Column(
                     children: [

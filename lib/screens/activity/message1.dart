@@ -27,19 +27,10 @@ class Message1 extends StatelessWidget {
                   height: 28,
                   width: 28,
                   // color: const Color(0xffF80C7D),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(width: 1, color: ColorResources.White),
                   ),
-                  child: const Text(
-                    '1',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )),
+                  child: Image.asset('images/profile_image.png')),
               const SizedBox(width: 20),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,20 +109,12 @@ class Message1 extends StatelessWidget {
                                   height: 40,
                                   width: 40,
                                   // color: const Color(0xffF80C7D),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
-                                    border: Border.all(
-                                        width: 1, color: ColorResources.White),
                                   ),
-                                  child: const Text(
-                                    '1',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: ColorResources.White,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  )),
+                                  child:
+                                      Image.asset('images/profile_image.png')),
+                              const VerticalSpace(),
                               const Text(
                                 'Brandon',
                                 style: TextStyle(
@@ -149,20 +132,12 @@ class Message1 extends StatelessWidget {
                                   height: 40,
                                   width: 40,
                                   // color: const Color(0xffF80C7D),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
-                                    border: Border.all(
-                                        width: 1, color: ColorResources.White),
                                   ),
-                                  child: const Text(
-                                    '1',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: ColorResources.White,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  )),
+                                  child:
+                                      Image.asset('images/profile_image.png')),
+                              const VerticalSpace(),
                               const Text(
                                 'Maria',
                                 style: TextStyle(
@@ -180,20 +155,12 @@ class Message1 extends StatelessWidget {
                                   height: 40,
                                   width: 40,
                                   // color: const Color(0xffF80C7D),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
-                                    border: Border.all(
-                                        width: 1, color: ColorResources.White),
                                   ),
-                                  child: const Text(
-                                    '1',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: ColorResources.White,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  )),
+                                  child:
+                                      Image.asset('images/profile_image.png')),
+                              const VerticalSpace(),
                               const Text(
                                 'George',
                                 style: TextStyle(
@@ -216,15 +183,9 @@ class Message1 extends StatelessWidget {
                                     border: Border.all(
                                         width: 1, color: ColorResources.White),
                                   ),
-                                  child: const Text(
-                                    '1',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: ColorResources.White,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  )),
+                                  child:
+                                      Image.asset('images/profile_image.png')),
+                              const VerticalSpace(),
                               const Text(
                                 'Nicky',
                                 style: TextStyle(
@@ -244,49 +205,45 @@ class Message1 extends StatelessWidget {
                               height: 40,
                               width: 40,
                               // color: const Color(0xffF80C7D),
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
-                                border: Border.all(
-                                    width: 1, color: ColorResources.White),
                               ),
-                              child: const Text(
-                                '1',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )),
+                              child: Image.asset('images/profile_image.png')),
                           const HorizontalSpace(),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               TextButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => const Message2()),
-                                  );
-                                },
-                                child: const Text(
-                                  'Brandon Olam',
-                                  style: TextStyle(
-                                    color: ColorResources.PrimaryGreen,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ),
-                              const Text(
-                                'Are you ok ? Call me Please',
-                                style: TextStyle(
-                                  color: ColorResources.GreyText,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const Message2()),
+                                    );
+                                  },
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        'Brandon Olam',
+                                        style: TextStyle(
+                                          color: ColorResources.PrimaryGreen,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Are you ok ? Call me Please',
+                                        style: TextStyle(
+                                          color: ColorResources.GreyText,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  )),
                             ],
                           ),
                         ],
