@@ -3,8 +3,8 @@ import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
-class Statistic extends StatelessWidget {
-  const Statistic({Key? key}) : super(key: key);
+class AllPost extends StatelessWidget {
+  const AllPost({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ class AllPostAnalytic extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorResources.Black,
-      appBar: CommonAppBar(
+      appBar: const CommonAppBar(
         title: 'Insights',
       ),
       body: ListView(
@@ -19,7 +19,7 @@ class AllPostAnalytic extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: [
+                children: const [
                   Text(
                     'Per Post',
                     style: TextStyle(
@@ -30,7 +30,7 @@ class AllPostAnalytic extends StatelessWidget {
                   )
                 ],
               ),
-              VerticalSpace(),
+              const VerticalSpace(),
               Container(
                 color: ColorResources.MatteBlack,
                 padding: const EdgeInsets.all(16),
@@ -105,7 +105,7 @@ class AllPostAnalytic extends StatelessWidget {
                   color: ColorResources.MatteBlack,
                   padding: const EdgeInsets.all(16),
                   child: ExpansionTile(
-                    title: Text(
+                    title: const Text(
                       'Video Views',
                       style: TextStyle(
                         color: ColorResources.GreyText,
@@ -277,7 +277,7 @@ class AllPostAnalytic extends StatelessWidget {
                         title: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               'Users Reached',
                               style: TextStyle(
                                 color: ColorResources.GreyText,
@@ -286,7 +286,7 @@ class AllPostAnalytic extends StatelessWidget {
                               ),
                             ),
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   '36.6k',
                                   style: TextStyle(
@@ -312,7 +312,7 @@ class AllPostAnalytic extends StatelessWidget {
                         title: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               'Users Engaged',
                               style: TextStyle(
                                 color: ColorResources.GreyText,
@@ -321,7 +321,7 @@ class AllPostAnalytic extends StatelessWidget {
                               ),
                             ),
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   '18',
                                   style: TextStyle(
@@ -347,7 +347,7 @@ class AllPostAnalytic extends StatelessWidget {
                         title: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               'Followers',
                               style: TextStyle(
                                 color: ColorResources.GreyText,
@@ -356,7 +356,7 @@ class AllPostAnalytic extends StatelessWidget {
                               ),
                             ),
                             Column(
-                              children: [
+                              children: const [
                                 Text(
                                   '3009',
                                   style: TextStyle(

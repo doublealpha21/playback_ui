@@ -12,11 +12,11 @@ class IndiVideoAnalytic extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorResources.Black,
-      appBar: CommonAppBar(
+      appBar: const CommonAppBar(
         title: ' ',
       ),
       body: ListView(
-        padding: EdgeInsets.all(14),
+        padding: const EdgeInsets.all(14),
         children: [
           Column(children: [
             Row(
@@ -90,8 +90,8 @@ class IndiVideoAnalytic extends StatelessWidget {
           ),
           const VerticalSpace(),
           Row(
-            children: [
-              const Text(
+            children: const [
+              Text(
                 'Video monetization progress',
                 style: TextStyle(
                   color: ColorResources.GreyText,
@@ -99,8 +99,8 @@ class IndiVideoAnalytic extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              const HorizontalSpace(),
-              const Icon(
+              HorizontalSpace(),
+              Icon(
                 Icons.info,
                 color: ColorResources.White,
               )
@@ -122,7 +122,7 @@ class IndiVideoAnalytic extends StatelessWidget {
               //
               // ),
               ),
-          VerticalSpace(),
+          const VerticalSpace(),
           Container(
             color: ColorResources.MatteBlack,
             padding: const EdgeInsets.all(16),
@@ -177,7 +177,7 @@ class IndiVideoAnalytic extends StatelessWidget {
               color: ColorResources.MatteBlack,
               padding: const EdgeInsets.all(16),
               child: ExpansionTile(
-                title: Text(
+                title: const Text(
                   'Video Views',
                   style: TextStyle(
                     color: ColorResources.GreyText,

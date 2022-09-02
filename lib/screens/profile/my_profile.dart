@@ -96,14 +96,14 @@ class MyProfile extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Settings_Screen()),
+                                builder: (context) => const Settings_Screen()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: ColorResources.PrimaryGreen,
+                          backgroundColor: ColorResources.PrimaryGreen,
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(114),
@@ -129,7 +129,7 @@ class MyProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: const Color(0xff1C1C1C),
+                          backgroundColor: const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(112),
@@ -149,7 +149,7 @@ class MyProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: const Color(0xff1C1C1C),
+                          backgroundColor: const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(112),
@@ -169,7 +169,7 @@ class MyProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: const Color(0xff1C1C1C),
+                          backgroundColor: const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(112),
@@ -282,7 +282,7 @@ class MyProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: const Color(0xff1C1C1C),
+                          backgroundColor: const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(162),
@@ -295,7 +295,7 @@ class MyProfile extends StatelessWidget {
                               color: ColorResources.White,
                             ),
                             Text(
-                              'Insights',
+                              'Videos',
                               style: TextStyle(
                                 color: ColorResources.White,
                                 fontSize: 14,
@@ -311,7 +311,7 @@ class MyProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: const Color(0xff1C1C1C),
+                          backgroundColor: const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(162),
