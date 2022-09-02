@@ -13,17 +13,23 @@ class TempSearchResult extends StatelessWidget {
     return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+      Row(
+        children: [
           const Icon(Icons.search_rounded, color: ColorResources.White),
-          Text(search_result,
+          Text(
+            search_result,
             style: const TextStyle(
               color: ColorResources.White,
               fontSize: 18,
               fontWeight: FontWeight.w700,
             ),
           ),
-          const Icon(MaterialCommunityIcons.arrow_top_left,
-            color: ColorResources.White,)
-        ]
-    );
+        ],
+      ),
+      const Icon(
+        MaterialCommunityIcons.arrow_top_left,
+        color: ColorResources.White,
+      )
+    ]);
   }
 }

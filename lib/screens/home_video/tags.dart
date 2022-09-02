@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
+import 'package:playback_ui/widgets/vertical_space.dart';
 
 class Tags extends StatelessWidget {
   const Tags({Key? key}) : super(key: key);
@@ -66,39 +67,49 @@ class Tags extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Expanded(
-              child: ListView(
+          Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          height: 32,
-                          width: 32,
-                          // color: const Color(0xffF80C7D),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                                width: 1, color: ColorResources.White),
-                          ),
-                          child: const Icon(Icons.filter_alt_rounded,
-                              color: ColorResources.White),
-                        ),
-                        const SizedBox(width: 2),
-                        Container(
-                          width: 20,
-                          color: Colors.white,
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+              Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 32,
+                    // color: const Color(0xffF80C7D),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(width: 1, color: ColorResources.White),
+                    ),
+                    child: const Icon(Icons.filter_alt_rounded,
+                        color: ColorResources.White),
+                  ),
+                  const SizedBox(width: 2),
+                  Container(
+                    width: 20,
+                    color: Colors.white,
+                  ),
+                ],
               )
             ],
-          ))
+          ),
+          VerticalSpace(),
+          Expanded(
+            child: GridView.count(
+              crossAxisCount: 3,
+              crossAxisSpacing: 2.0,
+              mainAxisSpacing: 4.0,
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              children: List.generate(
+                30,
+                (index) {
+                  return Image.asset(
+                    'images/background.png',
+                    width: double.infinity,
+                    fit: BoxFit.fitWidth,
+                  );
+                },
+              ),
+            ),
+          )
         ],
       ),
     );

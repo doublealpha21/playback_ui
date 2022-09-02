@@ -6,11 +6,22 @@ import 'package:playback_ui/utils/textfield.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
-class CampaignScreen2 extends StatelessWidget {
+class CampaignScreen2 extends StatefulWidget {
   const CampaignScreen2({Key? key}) : super(key: key);
 
   @override
+  State<CampaignScreen2> createState() => _CampaignScreen2State();
+}
+
+class _CampaignScreen2State extends State<CampaignScreen2> {
+  RangeValues values = const RangeValues(0.5, 0.1);
+
+  @override
   Widget build(BuildContext context) {
+    RangeLabels labels = RangeLabels(
+      values.start.toString(),
+      values.end.toString(),
+    );
     return Scaffold(
       backgroundColor: ColorResources.Black,
       appBar: const CommonAppBar(title: ' '),
@@ -164,7 +175,19 @@ class CampaignScreen2 extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  // Slider(value: value, onChanged: onChanged)
+                  // Row(
+                  //   children: [
+                  //     RangeSlider(values:values,
+                  //         divisions: 2,
+                  //         labels: labels,
+                  //         onChanged: (newValues){
+                  //           setState(() {
+                  //             values = newValues;
+                  //           });
+                  //
+                  //         }),
+                  //   ],
+                  // ),
                   const VerticalSpace(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

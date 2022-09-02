@@ -5,8 +5,24 @@ import 'package:playback_ui/widgets/custom_mini_button.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
-class SearchResults extends StatelessWidget {
+class SearchResults extends StatefulWidget {
   const SearchResults({Key? key}) : super(key: key);
+
+  @override
+  State<SearchResults> createState() => _SearchResultsState();
+}
+
+class _SearchResultsState extends State<SearchResults> {
+  static const List<String> _filters = [
+    'Trending',
+    'Popular',
+    '#music',
+    'Popular',
+    'Popular',
+    'Popular',
+  ];
+
+  int _selectedFilter = -1;
 
   @override
   Widget build(BuildContext context) {
@@ -52,84 +68,54 @@ class SearchResults extends StatelessWidget {
                       ],
                     ),
                     const VerticalSpace(),
-                    Row(
-                      children: [
-                        Container(
-                            height: 35,
-                            width: 60,
-                            // color: const Color(0xffF80C7D),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              border: Border.all(
-                                  width: 1, color: ColorResources.White),
-                            ),
-                            child: const Text(
-                              'Videos',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )),
-                        const SizedBox(width: 12),
-                        Container(
-                            height: 35,
-                            width: 60,
-                            // color: const Color(0xffF80C7D),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              border: Border.all(
-                                  width: 1, color: ColorResources.White),
-                            ),
-                            child: const Text(
-                              'Sounds',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )),
-                        const SizedBox(width: 12),
-                        Container(
-                            height: 35,
-                            width: 60,
-                            // color: const Color(0xffF80C7D),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              border: Border.all(
-                                  width: 1, color: ColorResources.White),
-                            ),
-                            child: const Text(
-                              'Effects',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )),
-                        const SizedBox(width: 12),
-                        Container(
-                            height: 35,
-                            width: 60,
-                            // color: const Color(0xffF80C7D),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              border: Border.all(
-                                  width: 1, color: ColorResources.White),
-                            ),
-                            child: const Text(
-                              'Tags',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )),
-                      ],
+                    SizedBox(
+                      child: Row(
+                        children: [
+                          // Expanded(
+                          //   child: ListView(
+                          //     scrollDirection: Axis.horizontal,
+                          //     children: List.generate(
+                          //       _filters.length,
+                          //           (index) {
+                          //         return InkWell(
+                          //           onTap: () {
+                          //             setState(() {
+                          //               _selectedFilter = index;
+                          //             });
+                          //           },
+                          //           child: Container(
+                          //             decoration: BoxDecoration(
+                          //               border: Border.all(
+                          //                 color: _selectedFilter == index
+                          //                     ? Colors.black
+                          //                     : Colors.white,
+                          //               ),
+                          //               borderRadius: BorderRadius.circular(16.0),
+                          //               color: _selectedFilter == index
+                          //                   ? const Color(0xff2D2D2D)
+                          //                   : Colors.black,
+                          //             ),
+                          //             padding: const EdgeInsets.all(8.0),
+                          //             margin: EdgeInsets.fromLTRB(
+                          //               index == 0 ? 0.0 : 4.0,
+                          //               8.0,
+                          //               8.0,
+                          //               index == (_filters.length - 1) ? 0.0 : 4.0,
+                          //             ),
+                          //             child: Text(
+                          //               _filters[index],
+                          //               style: const TextStyle(
+                          //                 color: Colors.white,
+                          //               ),
+                          //             ),
+                          //           ),
+                          //         );
+                          //       },
+                          //     ),
+                          //   ),
+                          // ),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 20),
                     Row(
@@ -221,18 +207,8 @@ class SearchResults extends StatelessWidget {
                                 // color: const Color(0xffF80C7D),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 1, color: ColorResources.White),
                                 ),
-                                child: const Text(
-                                  '1',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )),
+                                child: Image.asset('images/profile_image.png')),
                             const HorizontalSpace(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -292,18 +268,8 @@ class SearchResults extends StatelessWidget {
                                 // color: const Color(0xffF80C7D),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 1, color: ColorResources.White),
                                 ),
-                                child: const Text(
-                                  '1',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )),
+                                child: Image.asset('images/profile_image.png')),
                             const HorizontalSpace(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -359,18 +325,8 @@ class SearchResults extends StatelessWidget {
                                 // color: const Color(0xffF80C7D),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 1, color: ColorResources.White),
                                 ),
-                                child: const Text(
-                                  '1',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )),
+                                child: Image.asset('images/profile_image.png')),
                             const HorizontalSpace(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -426,18 +382,8 @@ class SearchResults extends StatelessWidget {
                                 // color: const Color(0xffF80C7D),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 1, color: ColorResources.White),
                                 ),
-                                child: const Text(
-                                  '1',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )),
+                                child: Image.asset('images/profile_image.png')),
                             const HorizontalSpace(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -493,18 +439,8 @@ class SearchResults extends StatelessWidget {
                                 // color: const Color(0xffF80C7D),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 1, color: ColorResources.White),
                                 ),
-                                child: const Text(
-                                  '1',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )),
+                                child: Image.asset('images/profile_image.png')),
                             const HorizontalSpace(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -560,18 +496,8 @@ class SearchResults extends StatelessWidget {
                                 // color: const Color(0xffF80C7D),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 1, color: ColorResources.White),
                                 ),
-                                child: const Text(
-                                  '1',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )),
+                                child: Image.asset('images/profile_image.png')),
                             const HorizontalSpace(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -653,19 +579,9 @@ class SearchResults extends StatelessWidget {
                                     // color: const Color(0xffF80C7D),
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      border: Border.all(
-                                          width: 1,
-                                          color: ColorResources.White),
                                     ),
-                                    child: const Text(
-                                      '1',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        color: ColorResources.White,
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    )),
+                                    child: Image.asset(
+                                        'images/lewis_capaldi.png')),
                                 const SizedBox(width: 10),
                                 Column(
                                   children: const [
@@ -705,19 +621,9 @@ class SearchResults extends StatelessWidget {
                                     // color: const Color(0xffF80C7D),
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      border: Border.all(
-                                          width: 1,
-                                          color: ColorResources.White),
                                     ),
-                                    child: const Text(
-                                      '1',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        color: ColorResources.White,
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    )),
+                                    child: Image.asset(
+                                        'images/lewis_capaldi.png')),
                                 const SizedBox(width: 10),
                                 Column(
                                   children: const [
