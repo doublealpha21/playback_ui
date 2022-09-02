@@ -2,8 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 
-class FavoriteVideos extends StatelessWidget {
+class FavoriteVideos extends StatefulWidget {
   const FavoriteVideos({Key? key}) : super(key: key);
+
+  @override
+  State<FavoriteVideos> createState() => _FavoriteVideosState();
+}
+
+class _FavoriteVideosState extends State<FavoriteVideos> {
+  static const List<String> _filters = [
+    'Trending',
+    'Popular',
+    '#music',
+    'Popular',
+    'Popular',
+    'Popular',
+  ];
+
+  int _selectedFilter = -1;
 
   @override
   Widget build(BuildContext context) {
@@ -12,96 +28,97 @@ class FavoriteVideos extends StatelessWidget {
       appBar: const CommonAppBar(title: 'Favorites'),
       body: Column(
         children: [
-          Row(
-            children: [
-              Container(
-                  height: 35,
-                  width: 60,
-                  // color: const Color(0xffF80C7D),
+          SizedBox(
+            height: 45.0,
+            child: Row(
+              children: [
+                Container(
                   decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    border: Border.all(width: 1, color: ColorResources.White),
-                  ),
-                  child: const Text(
-                    'Videos',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                    border: Border.all(
+                      color: Colors.grey,
                     ),
-                  )),
-              const SizedBox(width: 10),
-              Container(
-                  height: 35,
-                  width: 60,
-                  // color: const Color(0xffF80C7D),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    border: Border.all(width: 1, color: ColorResources.White),
+                    shape: BoxShape.circle,
+                    color: const Color(0xff2D2D2D),
                   ),
-                  child: const Text(
-                    'Sounds',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )),
-              const SizedBox(width: 10),
-              Container(
-                  height: 35,
-                  width: 60,
-                  // color: const Color(0xffF80C7D),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    border: Border.all(width: 1, color: ColorResources.White),
+                  padding: const EdgeInsets.all(8.0),
+                  margin: const EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 4.0),
+                  child: const Icon(
+                    Icons.filter_alt,
+                    color: Colors.white,
+                    size: 16.0,
                   ),
-                  child: const Text(
-                    'Effects',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )),
-              const SizedBox(width: 10),
-              Container(
-                  height: 35,
-                  width: 60,
-                  // color: const Color(0xffF80C7D),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    border: Border.all(width: 1, color: ColorResources.White),
+                ),
+                Container(
+                  width: 1.0,
+                  color: Colors.grey,
+                  margin: const EdgeInsets.only(
+                    right: 8.0,
+                    top: 8.0,
+                    bottom: 8.0,
                   ),
-                  child: const Text(
-                    'Tags',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                ),
+                Expanded(
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: List.generate(
+                      _filters.length,
+                      (index) {
+                        return InkWell(
+                          onTap: () {
+                            setState(() {
+                              _selectedFilter = index;
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: _selectedFilter == index
+                                    ? Colors.black
+                                    : Colors.white,
+                              ),
+                              borderRadius: BorderRadius.circular(16.0),
+                              color: _selectedFilter == index
+                                  ? const Color(0xff2D2D2D)
+                                  : Colors.black,
+                            ),
+                            padding: const EdgeInsets.all(8.0),
+                            margin: EdgeInsets.fromLTRB(
+                              index == 0 ? 0.0 : 4.0,
+                              8.0,
+                              8.0,
+                              index == (_filters.length - 1) ? 0.0 : 4.0,
+                            ),
+                            child: Text(
+                              _filters[index],
+                              style: const TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        );
+                      },
                     ),
-                  )),
-            ],
+                  ),
+                ),
+              ],
+            ),
           ),
           Expanded(
-            child: ListView(
-              padding: const EdgeInsets.all(16),
-              children: [
-                Column(
-                  children: [
-                    Expanded(
-                      child: GridView.count(
-                        crossAxisCount: 3,
-                        children: const [],
-                      ),
-                    ),
-                  ],
-                )
-              ],
+            child: GridView.count(
+              crossAxisCount: 3,
+              crossAxisSpacing: 2.0,
+              mainAxisSpacing: 4.0,
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              children: List.generate(
+                30,
+                (index) {
+                  return Image.asset(
+                    'images/background.png',
+                    width: double.infinity,
+                    fit: BoxFit.fitWidth,
+                  );
+                },
+              ),
             ),
           )
         ],
