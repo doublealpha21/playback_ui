@@ -43,15 +43,18 @@ class Onboard3 extends StatelessWidget {
                       shape: BoxShape.circle,
                       border: Border.all(width: 1, color: ColorResources.White),
                     ),
-                    child: const Text(
-                      '1',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    child: const Center(
+                      child: Text(
+                        '1',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )),
+                const SizedBox(width: 4),
                 Container(
                     height: 40,
                     width: 40,
@@ -62,32 +65,38 @@ class Onboard3 extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    child: const Text(
-                      '2',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    child: const Center(
+                      child: Text(
+                        '2',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )),
+                const SizedBox(width: 4),
                 Container(
                     height: 40,
                     width: 40,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
+                      color: const Color(0xff863BBE),
                       border: Border.all(
                         width: 1,
                         color: Colors.white,
                       ),
                     ),
-                    child: const Text(
-                      '3',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    child: const Center(
+                      child: Text(
+                        '3',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )),
               ],

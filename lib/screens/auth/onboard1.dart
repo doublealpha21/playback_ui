@@ -40,18 +40,22 @@ class Onboard1 extends StatelessWidget {
                     width: 40,
                     // color: const Color(0xffF80C7D),
                     decoration: BoxDecoration(
+                      color: ColorResources.PrimaryPink,
                       shape: BoxShape.circle,
                       border: Border.all(width: 1, color: ColorResources.White),
                     ),
-                    child: const Text(
-                      '1',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    child: const Center(
+                      child: Text(
+                        '1',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )),
+                const SizedBox(width: 4),
                 Container(
                     height: 40,
                     width: 40,
@@ -62,15 +66,18 @@ class Onboard1 extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    child: const Text(
-                      '2',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    child: const Center(
+                      child: Text(
+                        '2',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )),
+                const SizedBox(width: 4),
                 Container(
                     height: 40,
                     width: 40,
@@ -81,13 +88,15 @@ class Onboard1 extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    child: const Text(
-                      '3',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: ColorResources.White,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    child: const Center(
+                      child: Text(
+                        '3',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )),
               ],

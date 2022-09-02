@@ -113,37 +113,41 @@ class SignUp extends StatelessWidget {
             const SizedBox(height: 25),
             const CustomButton(hint: 'Login', Colour: Color(0XFFF80C7D)),
             const VerticalSpace(),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Row(
-                  children: const [
-                    Text(
-                      'By continuing you agree to PlayBack',
-                      style:
-                          TextStyle(color: ColorResources.White, fontSize: 13),
-                    ),
-                    Text(
-                      'Terms Of Use',
-                      style: TextStyle(color: Colors.blue, fontSize: 13),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: const [
-                    Text(
-                      'and Confirm that you have read Playback',
-                      style:
-                          TextStyle(color: ColorResources.White, fontSize: 13),
-                    ),
-                    Text(
-                      'Privacy Policy',
-                      style: TextStyle(color: Colors.blue, fontSize: 13),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+            Center(
+              child: Column(
+                children: [
+                  Row(
+                    children: const [
+                      Text(
+                        'By continuing you agree to PlayBack',
+                        style: TextStyle(
+                            color: ColorResources.White, fontSize: 13),
+                      ),
+                      SizedBox(width: 5),
+                      Text(
+                        'Terms Of Use',
+                        style: TextStyle(color: Colors.blue, fontSize: 13),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: const [
+                      Text(
+                        'and Confirm that you have read Playback',
+                        style: TextStyle(
+                            color: ColorResources.White, fontSize: 13),
+                      ),
+                      VerticalSpace(),
+                      SizedBox(width: 5),
+                      Text(
+                        'Privacy Policy',
+                        style: TextStyle(color: Colors.blue, fontSize: 13),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
