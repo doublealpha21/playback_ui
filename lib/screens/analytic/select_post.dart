@@ -26,120 +26,118 @@ class SelectPostAnalytic extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(14),
         children: [
-          Expanded(
-            child: DefaultTabController(
-              length: 3,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const BoostedVideoAnalytic()),
-                          );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6.0),
-                          ),
-                          backgroundColor: ColorResources.PrimaryGreen,
-                          // const Color(0xff1C1C1C),
-                          padding: const EdgeInsets.all(12),
-                          elevation: 0.0,
-                          fixedSize: const Size.fromWidth(162),
+          DefaultTabController(
+            length: 3,
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const BoostedVideoAnalytic()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6.0),
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
-                            Icon(
-                              Icons.video_collection_outlined,
+                        backgroundColor: ColorResources.PrimaryGreen,
+                        // const Color(0xff1C1C1C),
+                        padding: const EdgeInsets.all(12),
+                        elevation: 0.0,
+                        fixedSize: const Size.fromWidth(162),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: const [
+                          Icon(
+                            Icons.video_collection_outlined,
+                            color: ColorResources.White,
+                          ),
+                          Text(
+                            'Videos',
+                            style: TextStyle(
                               color: ColorResources.White,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
                             ),
-                            Text(
-                              'Videos',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const IndiVideoAnalytic()),
-                          );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6.0),
                           ),
-                          backgroundColor: ColorResources.PrimaryGreen,
-                          // const Color(0xff1C1C1C),
-                          padding: const EdgeInsets.all(12),
-                          elevation: 0.0,
-                          fixedSize: const Size.fromWidth(162),
+                        ],
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const IndiVideoAnalytic()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6.0),
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
-                            Icon(
-                              Icons.photo_library_outlined,
+                        backgroundColor: ColorResources.PrimaryGreen,
+                        // const Color(0xff1C1C1C),
+                        padding: const EdgeInsets.all(12),
+                        elevation: 0.0,
+                        fixedSize: const Size.fromWidth(162),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: const [
+                          Icon(
+                            Icons.photo_library_outlined,
+                            color: ColorResources.White,
+                          ),
+                          Text(
+                            'Photos',
+                            style: TextStyle(
                               color: ColorResources.White,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
                             ),
-                            Text(
-                              'Photos',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  const VerticalSpace(),
-                  TabBar(
-                    tabs: <Widget>[
-                      Tab(child: Text('All')),
-                      OutlinedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const AnalyticPhoto()),
-                          );
-                        },
-                        child: Tab(
-                            child: Text(
-                          'Monetized',
-                          style: TextStyle(
-                            color: ColorResources.PrimaryGreen,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
                           ),
-                        )),
+                        ],
                       ),
-                      Tab(child: Text('Boosted')),
-                    ],
-                    indicatorWeight: 3,
-                    indicatorColor: ColorResources.White,
-                  ),
-                  Image.asset('images/group_3191.png'),
-                ],
-              ),
+                    ),
+                  ],
+                ),
+                const VerticalSpace(),
+                TabBar(
+                  tabs: <Widget>[
+                    Tab(child: Text('All')),
+                    OutlinedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const AnalyticPhoto()),
+                        );
+                      },
+                      child: Tab(
+                          child: Text(
+                        'Monetized',
+                        style: TextStyle(
+                          color: ColorResources.PrimaryGreen,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      )),
+                    ),
+                    Tab(child: Text('Boosted')),
+                  ],
+                  indicatorWeight: 3,
+                  indicatorColor: ColorResources.White,
+                ),
+                VerticalSpace(),
+                Image.asset('images/group_3191.png'),
+              ],
             ),
           )
         ],

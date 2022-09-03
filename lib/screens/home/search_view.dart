@@ -13,6 +13,8 @@ class SearchView extends StatelessWidget {
       backgroundColor: ColorResources.Black,
       body: Column(
         children: [
+          VerticalSpace(),
+          VerticalSpace(),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

@@ -141,35 +141,13 @@ class _SearchResultsState extends State<SearchResults> {
                             ))
                       ],
                     ),
-                    SizedBox(
-                      height: 150,
-                      width: double.infinity,
-                      child: Flexible(
-                        child: GridView.count(
-                          crossAxisCount: 3,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 206,
-                                  width: 145,
-                                  color: ColorResources.PrimaryPink,
-                                ),
-                                Container(
-                                  height: 206,
-                                  width: 145,
-                                  color: ColorResources.PrimaryGreen,
-                                ),
-                                Container(
-                                  height: 206,
-                                  width: 145,
-                                  color: ColorResources.PrimaryPurple,
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
+                    Row(
+                      children: [
+                        Image.asset('images/background.png'),
+                        HorizontalSpace(),
+                        Image.asset('images/background.png'),
+                        HorizontalSpace(),
+                      ],
                     ),
                     const SizedBox(height: 20),
                     Row(

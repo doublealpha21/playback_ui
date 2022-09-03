@@ -13,7 +13,8 @@ class OtherProfile extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorResources.Black,
       appBar: AppBar(
-        backgroundColor: ColorResources.PrimaryPurple,
+        backgroundColor: Colors.transparent,
+        title: Image.asset('images/image_1.png'),
       ),
       body: Column(
         children: [
@@ -349,7 +350,9 @@ class OtherProfile extends StatelessWidget {
                     ],
                   ),
                 ],
-              )
+              ),
+              VerticalSpace(),
+              Image.asset('images/group_2895.png')
             ],
           ))
         ],
