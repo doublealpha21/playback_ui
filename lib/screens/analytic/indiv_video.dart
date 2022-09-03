@@ -106,22 +106,8 @@ class IndiVideoAnalytic extends StatelessWidget {
               )
             ],
           ),
-          const Center(
-              // child: Slider(
-              //   value: _duelCommandment.toDouble(),
-              //   min: 0.0,
-              //   max: 100.0,
-              //   divisions: 100,
-              //   label: '\$5_daily',
-              //   onChanged: (double newValue) {
-              //     setState(() {
-              //       _duelCommandment = newValue.round();
-              //     });
-              //   },
-              // activeColor: ColorResources.PrimaryPink,
-              //
-              // ),
-              ),
+          VerticalSpace(),
+          Image.asset('images/slider.png'),
           const VerticalSpace(),
           Container(
             color: ColorResources.MatteBlack,

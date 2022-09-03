@@ -60,10 +60,11 @@ class BoostVideos5 extends StatelessWidget {
                     ),
                   ),
                 ),
+                VerticalSpace(),
                 SizedBox(
                   width: 296,
                   height: 580,
-                  child: Expanded(child: Image.asset('images/background.png')),
+                  child: Expanded(child: Image.asset('images/group_3210.png')),
                 ),
                 Container(
                   height: 2,

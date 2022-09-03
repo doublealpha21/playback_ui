@@ -80,7 +80,7 @@ class OtherProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          primary: ColorResources.PrimaryPink,
+                          backgroundColor: ColorResources.PrimaryPink,
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(116),
@@ -91,7 +91,7 @@ class OtherProfile extends StatelessWidget {
                                 color: ColorResources.White, size: 20),
                             SizedBox(width: 2),
                             Text(
-                              'Edit Profile',
+                              'Following',
                               style: TextStyle(
                                 color: ColorResources.White,
                                 fontSize: 14,

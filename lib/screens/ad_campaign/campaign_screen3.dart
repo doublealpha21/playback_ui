@@ -33,7 +33,7 @@ class CampaignScreen3 extends StatelessWidget {
                     width: 296,
                     height: 580,
                     child:
-                        Expanded(child: Image.asset('images/background.png')),
+                        Expanded(child: Image.asset('images/group_3210.png')),
                   ),
                 ),
                 Container(

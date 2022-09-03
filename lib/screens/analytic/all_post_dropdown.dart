@@ -14,6 +14,7 @@ class AllPostAnalytic extends StatelessWidget {
         title: 'Insights',
       ),
       body: ListView(
+        padding: EdgeInsets.all(16),
         children: [
           Column(
             children: [
@@ -163,7 +164,7 @@ class AllPostAnalytic extends StatelessWidget {
                           children: const [
                             Text(
                               'Video Impressions Click-Through Rate\n'
-                              '(32% from boost)',
+                                  '(32% from boost)',
                               style: TextStyle(
                                 color: ColorResources.GreyText,
                                 fontSize: 16,

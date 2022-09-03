@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/analytic/all_post_dropdown.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -22,11 +23,17 @@ class AllPost extends StatelessWidget {
         ),
         actions: [
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AllPostAnalytic()),
+                );
+              },
               child: const Text(
                 'Per Post',
                 style: TextStyle(
-                  color: ColorResources.White,
+                  color: ColorResources.PrimaryGreen,
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                 ),

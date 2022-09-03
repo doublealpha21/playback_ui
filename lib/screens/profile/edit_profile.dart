@@ -28,24 +28,12 @@ class EditProfile extends StatelessWidget {
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border:
-                              Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: Image.network(
-                          'https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_960_720.jpg',
+                        child: Image.asset(
+                          'images/ellipse_2954.png',
                           width: 72,
                           height: 72,
-                        )
-                        // const Text(
-                        //   '1',
-                        //   textAlign: TextAlign.center,
-                        //   style: TextStyle(
-                        //     color: ColorResources.White,
-                        //     fontSize: 24,
-                        //     fontWeight: FontWeight.bold,
-                        //   ),
-                        // )
-                        ),
+                        )),
                     const VerticalSpace(),
                     const Text(
                       'Change Photo',
@@ -64,15 +52,11 @@ class EditProfile extends StatelessWidget {
                         width: 138,
                         // color: const Color(0xffF80C7D),
                         decoration: BoxDecoration(
-                          shape: BoxShape.circle,
+                          shape: BoxShape.rectangle,
                           border:
                               Border.all(width: 1, color: ColorResources.White),
                         ),
-                        child: Image.network(
-                          'https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_960_720.jpg',
-                          width: 72,
-                          height: 72,
-                        )
+                        child: Image.asset('images/rectangle_2305.png')
                         // const Text(
                         //   '1',
                         //   textAlign: TextAlign.center,

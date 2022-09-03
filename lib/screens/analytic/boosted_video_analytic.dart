@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/boost_videos/boost_videos1.dart';
 import 'package:playback_ui/screens/payment/payment_method.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
@@ -14,7 +15,7 @@ class BoostedVideoAnalytic extends StatelessWidget {
       backgroundColor: ColorResources.Black,
       appBar: const CommonAppBar(title: ' '),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
             Column(
@@ -88,11 +89,11 @@ class BoostedVideoAnalytic extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => PaymentMethod()),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BoostVideos1()),
+                        );
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xffFF5656),
@@ -137,22 +138,9 @@ class BoostedVideoAnalytic extends StatelessWidget {
                     )
                   ],
                 ),
-                const Center(
-                    // child: Slider(
-                    //   value: _duelCommandment.toDouble(),
-                    //   min: 0.0,
-                    //   max: 100.0,
-                    //   divisions: 100,
-                    //   label: '\$5_daily',
-                    //   onChanged: (double newValue) {
-                    //     setState(() {
-                    //       _duelCommandment = newValue.round();
-                    //     });
-                    //   },
-                    // activeColor: ColorResources.PrimaryPink,
-                    //
-                    // ),
-                    ),
+                VerticalSpace(),
+                Image.asset('images/slider.png'),
+                VerticalSpace(),
                 Container(
                   color: ColorResources.MatteBlack,
                   padding: const EdgeInsets.all(16),
@@ -377,6 +365,70 @@ class BoostedVideoAnalytic extends StatelessWidget {
                         )
                       ],
                     )),
+                const VerticalSpace(),
+                Column(
+                  children: [
+                    Image.asset('images/tooltip.png'),
+                    Image.asset('images/graph_line.png'),
+                    Image.asset('images/x_axis.png'),
+                  ],
+                ),
+                const VerticalSpace(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      'Date',
+                      style: TextStyle(
+                        color: ColorResources.White,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    Row(
+                      children: const [
+                        Text(
+                          'Photos Views',
+                          style: TextStyle(
+                            color: ColorResources.White,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                        SizedBox(width: 15),
+                        Text(
+                          'Avg/Hour',
+                          style: TextStyle(
+                            color: ColorResources.White,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                        SizedBox(width: 15),
+                        Text(
+                          'Graph',
+                          style: TextStyle(
+                            color: ColorResources.White,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+                VerticalSpace(),
+                Column(
+                  children: [
+                    Image.asset('images/3019.png'),
+                    const VerticalSpace(),
+                    Image.asset('images/3020.png'),
+                    const VerticalSpace(),
+                    Image.asset('images/3021.png'),
+                    const VerticalSpace(),
+                    Image.asset('images/3022.png'),
+                  ],
+                )
               ],
             ),
           ],

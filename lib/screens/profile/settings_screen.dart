@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:playback_ui/screens/profile/edit_profile.dart';
 import 'package:playback_ui/screens/profile/other_profile.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
@@ -66,7 +67,7 @@ class Settings_Screen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => OtherProfile()),
+                                builder: (context) => EditProfile()),
                           );
                         },
                         child: Text(
@@ -109,7 +110,7 @@ class Settings_Screen extends StatelessWidget {
                       ),
                       HorizontalSpace(),
                       Text(
-                        'Manage Account',
+                        'Share Profile',
                         style: TextStyle(
                           color: ColorResources.White,
                           fontSize: 16,

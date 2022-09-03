@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/analytic/analytic_video.dart';
+import 'package:playback_ui/screens/analytic/statistic.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
@@ -21,11 +23,16 @@ class AnalyticPhoto extends StatelessWidget {
         ),
         actions: [
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Statistic()),
+                );
+              },
               child: const Text(
                 'Per Post',
                 style: TextStyle(
-                  color: ColorResources.White,
+                  color: ColorResources.PrimaryGreen,
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                 ),
@@ -42,12 +49,19 @@ class AnalyticPhoto extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const AnalyticVideo()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(6.0),
                       ),
-                      backgroundColor: const Color(0xff1C1C1C),
+                      backgroundColor: ColorResources.PrimaryGreen,
+                      // const Color(0xff1C1C1C),
                       padding: const EdgeInsets.all(6),
                       elevation: 0.0,
                       fixedSize: const Size.fromWidth(162),

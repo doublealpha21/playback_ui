@@ -128,55 +128,7 @@ class BoostVideos4 extends StatelessWidget {
                   ),
                 ),
                 const VerticalSpace(),
-                const Text(
-                  'Budget',
-                  style: TextStyle(
-                    color: ColorResources.GreyText,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const Center(
-                    // child: Slider(
-                    //   value: _duelCommandment.toDouble(),
-                    //   min: 0.0,
-                    //   max: 100.0,
-                    //   divisions: 100,
-                    //   label: '\$5_daily',
-                    //   onChanged: (double newValue) {
-                    //     setState(() {
-                    //       _duelCommandment = newValue.round();
-                    //     });
-                    //   },
-                    // activeColor: ColorResources.PrimaryPink,
-                    //
-                    // ),
-                    ),
-                const VerticalSpace(),
-                const Text(
-                  'Duration',
-                  style: TextStyle(
-                    color: ColorResources.GreyText,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const Center(
-                    // child: Slider(
-                    //   value: _duelCommandment.toDouble(),
-                    //   min: 0.0,
-                    //   max: 100.0,
-                    //   divisions: 100,
-                    //   label: '\$5_daily',
-                    //   onChanged: (double newValue) {
-                    //     setState(() {
-                    //       _duelCommandment = newValue.round();
-                    //     });
-                    //   },
-                    //   activeColor: ColorResources.PrimaryPink,
-                    //
-                    // ),
-                    ),
+                Image.asset('images/group _3228.png'),
                 const VerticalSpace(),
                 Container(
                   height: 2,

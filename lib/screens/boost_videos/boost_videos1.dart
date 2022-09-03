@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/boost_videos/boost_videos4.dart';
 import 'package:playback_ui/utils/colors.dart';
 
 class BoostVideos1 extends StatelessWidget {
@@ -43,12 +44,19 @@ class BoostVideos1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BoostVideos4()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(6.0),
                       ),
-                      backgroundColor: const Color(0xff1C1C1C),
+                      backgroundColor: ColorResources.PrimaryGreen,
+                      // const Color(0xff1C1C1C),
                       padding: const EdgeInsets.all(12),
                       elevation: 0.0,
                       fixedSize: const Size.fromWidth(162),

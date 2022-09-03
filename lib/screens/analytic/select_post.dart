@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/analytic/analytic_photo.dart';
+import 'package:playback_ui/screens/analytic/boosted_video_analytic.dart';
+import 'package:playback_ui/screens/analytic/indiv_video.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
@@ -32,12 +35,20 @@ class SelectPostAnalytic extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const BoostedVideoAnalytic()),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          backgroundColor: const Color(0xff1C1C1C),
+                          backgroundColor: ColorResources.PrimaryGreen,
+                          // const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(162),
@@ -61,12 +72,20 @@ class SelectPostAnalytic extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const IndiVideoAnalytic()),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          backgroundColor: const Color(0xff1C1C1C),
+                          backgroundColor: ColorResources.PrimaryGreen,
+                          // const Color(0xff1C1C1C),
                           padding: const EdgeInsets.all(12),
                           elevation: 0.0,
                           fixedSize: const Size.fromWidth(162),
@@ -92,15 +111,33 @@ class SelectPostAnalytic extends StatelessWidget {
                     ],
                   ),
                   const VerticalSpace(),
-                  const TabBar(
+                  TabBar(
                     tabs: <Widget>[
                       Tab(child: Text('All')),
-                      Tab(child: Text('Monetized')),
+                      OutlinedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const AnalyticPhoto()),
+                          );
+                        },
+                        child: Tab(
+                            child: Text(
+                          'Monetized',
+                          style: TextStyle(
+                            color: ColorResources.PrimaryGreen,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )),
+                      ),
                       Tab(child: Text('Boosted')),
                     ],
                     indicatorWeight: 3,
                     indicatorColor: ColorResources.White,
                   ),
+                  Image.asset('images/group_3191.png'),
                 ],
               ),
             ),

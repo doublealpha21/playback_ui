@@ -175,19 +175,8 @@ class _CampaignScreen2State extends State<CampaignScreen2> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  // Row(
-                  //   children: [
-                  //     RangeSlider(values:values,
-                  //         divisions: 2,
-                  //         labels: labels,
-                  //         onChanged: (newValues){
-                  //           setState(() {
-                  //             values = newValues;
-                  //           });
-                  //
-                  //         }),
-                  //   ],
-                  // ),
+                  VerticalSpace(),
+                  Image.asset('images/group_3204.png'),
                   const VerticalSpace(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

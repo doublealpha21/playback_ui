@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/activity/activity.dart';
 import 'package:playback_ui/screens/activity/message1.dart';
+import 'package:playback_ui/screens/activity/message2.dart';
+import 'package:playback_ui/screens/activity/message_selected.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -244,14 +247,22 @@ class ActivityNotification extends StatelessWidget {
                           child: Image.asset('images/profile_image.png'),
                         ),
                         const HorizontalSpace(),
-                        const Text(
-                          'Jack Nicole, commented\nyour post',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
+                        TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const Activity()),
+                              );
+                            },
+                            child: Text(
+                              'Jack Nicole, commented\nyour post',
+                              style: TextStyle(
+                                color: ColorResources.PrimaryGreen,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            )),
                       ],
                     ),
                     const Text(
@@ -283,7 +294,6 @@ class ActivityNotification extends StatelessWidget {
                         Container(
                             height: 40,
                             width: 40,
-
                             // color: const Color(0xffF80C7D),
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
@@ -295,13 +305,14 @@ class ActivityNotification extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Message1()),
+                                  builder: (context) =>
+                                      const MessageSelected()),
                             );
                           },
                           child: const Text(
                             'Brandon Olam\nAre you ok? call me please',
                             style: TextStyle(
-                              color: ColorResources.White,
+                              color: ColorResources.PrimaryGreen,
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),

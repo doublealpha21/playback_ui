@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/auth/sign_up.dart';
 import 'package:playback_ui/screens/home/home_logged_in.dart';
+import 'package:playback_ui/screens/home/home_visitors.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/custom_button.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -55,12 +56,21 @@ class Login extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Text(
-                      'Forgot Password?',
-                      style: TextStyle(
-                        color: Color(0xff2F80ED),
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeVisitors()),
+                        );
+                      },
+                      child: const Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                          color: Color(0xff2F80ED),
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
+                        ),
                       ),
                     )
                   ],

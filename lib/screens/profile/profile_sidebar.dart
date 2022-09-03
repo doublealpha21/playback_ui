@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:playback_ui/screens/ad_campaign/campaign_screen1.dart';
+import 'package:playback_ui/screens/ad_campaign/campaign_screen6.dart';
+import 'package:playback_ui/screens/analytic/select_post.dart';
 import 'package:playback_ui/screens/profile/my_profile.dart';
+import 'package:playback_ui/screens/profile/other_profile.dart';
+import 'package:playback_ui/screens/profile/settings_screen.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -25,7 +30,7 @@ class ProfileSidebar extends StatelessWidget {
                     height: 40,
                     width: 40,
                     // color: const Color(0xffF80C7D),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset('images/profile_image.png'),
@@ -60,21 +65,21 @@ class ProfileSidebar extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.person_add_alt_outlined,
                           color: ColorResources.White,
                           size: 25,
                         ),
-                        HorizontalSpace(),
+                        const HorizontalSpace(),
                         TextButton(
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => MyProfile()),
+                                  builder: (context) => const OtherProfile()),
                             );
                           },
-                          child: Text(
+                          child: const Text(
                             'Add Friends',
                             style: TextStyle(
                               color: ColorResources.PrimaryGreen,
@@ -106,24 +111,34 @@ class ProfileSidebar extends StatelessWidget {
                     ),
                     const VerticalSpace(),
                     Row(
-                      children: const [
-                        Icon(
+                      children: [
+                        const Icon(
                           Icons.bar_chart,
                           color: ColorResources.White,
                           size: 25,
                         ),
-                        HorizontalSpace(),
-                        Text(
-                          'Insights',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                        const HorizontalSpace(),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const SelectPostAnalytic()),
+                            );
+                          },
+                          child: const Text(
+                            'Insights',
+                            style: TextStyle(
+                              color: ColorResources.PrimaryGreen,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
                         )
                       ],
                     ),
-                    VerticalSpace(),
+                    const VerticalSpace(),
                     Container(
                       width: 316,
                       child: ExpansionTile(
@@ -133,16 +148,16 @@ class ProfileSidebar extends StatelessWidget {
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Entypo.megaphone,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              SizedBox(width: 50),
-                              Text(
+                              const SizedBox(width: 50),
+                              const Text(
                                 'Ad Campaigns',
                                 style: TextStyle(
-                                  color: ColorResources.White,
+                                  color: ColorResources.PrimaryGreen,
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -152,11 +167,18 @@ class ProfileSidebar extends StatelessWidget {
                           children: [
                             ListTile(
                               title: TextButton(
-                                  onPressed: () {},
-                                  child: Text(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const CampaignScreen6()),
+                                    );
+                                  },
+                                  child: const Text(
                                     'Create Ad Campaign',
                                     style: TextStyle(
-                                      color: ColorResources.GreyText,
+                                      color: ColorResources.PrimaryGreen,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -165,7 +187,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Edit Ad Campaign',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -177,7 +199,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Ad Campaign Insights',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -198,13 +220,13 @@ class ProfileSidebar extends StatelessWidget {
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.rocket_launch,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              SizedBox(width: 50),
-                              Text(
+                              const SizedBox(width: 50),
+                              const Text(
                                 'Post Boost',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -218,7 +240,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Boost Post',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -230,7 +252,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Boost Post Insights',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -251,13 +273,13 @@ class ProfileSidebar extends StatelessWidget {
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.monetization_on_rounded,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              SizedBox(width: 50),
-                              Text(
+                              const SizedBox(width: 50),
+                              const Text(
                                 'Monetizaion',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -271,7 +293,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Monetizaion Videos Insights',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -292,13 +314,13 @@ class ProfileSidebar extends StatelessWidget {
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Feather.dollar_sign,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              SizedBox(width: 50),
-                              Text(
+                              const SizedBox(width: 50),
+                              const Text(
                                 'Payment Methods',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -312,7 +334,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Pay',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -324,7 +346,7 @@ class ProfileSidebar extends StatelessWidget {
                             ListTile(
                               title: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'Get Paid',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
@@ -375,19 +397,29 @@ class ProfileSidebar extends StatelessWidget {
                     ),
                     const VerticalSpace(),
                     Row(
-                      children: const [
-                        Icon(
+                      children: [
+                        const Icon(
                           Icons.settings,
                           color: ColorResources.White,
                           size: 25,
                         ),
-                        HorizontalSpace(),
-                        Text(
-                          'Settings',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                        const HorizontalSpace(),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Settings_Screen()),
+                            );
+                          },
+                          child: const Text(
+                            'Settings',
+                            style: TextStyle(
+                              color: ColorResources.PrimaryGreen,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
                         )
                       ],

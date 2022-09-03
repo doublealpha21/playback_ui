@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:playback_ui/screens/payment/bank_account.dart';
+import 'package:playback_ui/screens/payment/paypal_account.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/utils/textfield.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
@@ -28,9 +30,15 @@ class PaymentMethod extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BankAccount()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: ColorResources.White,
+                        backgroundColor: ColorResources.PrimaryGreen,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(3.0))),
                     child: Container(
@@ -43,9 +51,15 @@ class PaymentMethod extends StatelessWidget {
                         )),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PaypalAccount()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: ColorResources.White,
+                        backgroundColor: ColorResources.PrimaryGreen,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(3.0))),
                     child: Container(

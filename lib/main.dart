@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Playback UI',
       debugShowCheckedModeBanner: false,
-      home: HomeLoggedIn(),
+      home: Login(),
     );
   }
 }

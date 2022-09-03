@@ -21,65 +21,6 @@ class CampaignScreen4 extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text(
-                          'Boost Your Posts',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        SizedBox(height: 10),
-                        Text(
-                          'Boosted video’s reach will increase\n'
-                          'as it will be displayed more often\n'
-                          'in our News Feed.',
-                          style: TextStyle(
-                            color: ColorResources.GreyText,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                        height: 81,
-                        width: 54,
-                        child: Image.asset('images/background.png'))
-                  ],
-                ),
-                const VerticalSpace(),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6.0),
-                    ),
-                    backgroundColor: ColorResources.PrimaryPink,
-                    padding: const EdgeInsets.all(12),
-                    elevation: 0.0,
-                    fixedSize: const Size.fromWidth(196),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
-                      Text(
-                        'Boosted Post Insights',
-                        style: TextStyle(
-                          color: ColorResources.White,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
                 const VerticalSpace(),
                 Center(
                   child: Container(
@@ -128,55 +69,7 @@ class CampaignScreen4 extends StatelessWidget {
                   ),
                 ),
                 const VerticalSpace(),
-                const Text(
-                  'Budget',
-                  style: TextStyle(
-                    color: ColorResources.GreyText,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const Center(
-                    // child: Slider(
-                    //   value: _duelCommandment.toDouble(),
-                    //   min: 0.0,
-                    //   max: 100.0,
-                    //   divisions: 100,
-                    //   label: '\$5_daily',
-                    //   onChanged: (double newValue) {
-                    //     setState(() {
-                    //       _duelCommandment = newValue.round();
-                    //     });
-                    //   },
-                    // activeColor: ColorResources.PrimaryPink,
-                    //
-                    // ),
-                    ),
-                const VerticalSpace(),
-                const Text(
-                  'Duration',
-                  style: TextStyle(
-                    color: ColorResources.GreyText,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const Center(
-                    // child: Slider(
-                    //   value: _duelCommandment.toDouble(),
-                    //   min: 0.0,
-                    //   max: 100.0,
-                    //   divisions: 100,
-                    //   label: '\$5_daily',
-                    //   onChanged: (double newValue) {
-                    //     setState(() {
-                    //       _duelCommandment = newValue.round();
-                    //     });
-                    //   },
-                    //   activeColor: ColorResources.PrimaryPink,
-                    //
-                    // ),
-                    ),
+                Image.asset('images/group _3228.png'),
                 const VerticalSpace(),
                 Container(
                   height: 2,
