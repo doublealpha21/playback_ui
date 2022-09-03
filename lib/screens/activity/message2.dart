@@ -53,7 +53,7 @@ class Message2 extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(width: 90),
+              const SizedBox(width: 60),
               const Icon(Icons.menu)
             ],
           ),
@@ -212,17 +212,17 @@ class Message2 extends StatelessWidget {
                                 children:  [
                                   TextButton(
                                     onPressed: () {
-                                      // Navigator.push(
-                                      //   context,
-                                      //   MaterialPageRoute(
-                                      //       builder: (context) =>
-                                      //           const ConnectContacts()),
-                                      // );
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const ConnectContacts()),
+                                      );
                                     },
                                     child: const Text(
                                       '10:22 AM',
                                       style: TextStyle(
-                                        color: ColorResources.White,
+                                        color: Colors.red,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400,
                                       ),

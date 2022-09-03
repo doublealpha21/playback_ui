@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:playback_ui/screens/profile/my_profile.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
@@ -21,23 +22,14 @@ class ProfileSidebar extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                      height: 40,
-                      width: 40,
-                      // color: const Color(0xffF80C7D),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border:
-                            Border.all(width: 1, color: ColorResources.White),
-                      ),
-                      child: const Text(
-                        '1',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: ColorResources.White,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )),
+                    height: 40,
+                    width: 40,
+                    // color: const Color(0xffF80C7D),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: Image.asset('images/profile_image.png'),
+                  ),
                   const SizedBox(width: 10),
                   const Text(
                     'Settings',
@@ -83,7 +75,7 @@ class ProfileSidebar extends StatelessWidget {
                             );
                           },
                           child: Text(
-                            'Manage Account',
+                            'Add Friends',
                             style: TextStyle(
                               color: ColorResources.PrimaryGreen,
                               fontSize: 16,
@@ -132,81 +124,216 @@ class ProfileSidebar extends StatelessWidget {
                       ],
                     ),
                     VerticalSpace(),
-                    const VerticalSpace(),
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.speaker,
-                          color: ColorResources.White,
-                          size: 25,
-                        ),
-                        HorizontalSpace(),
-                        Text(
-                          'Ad Campaigns',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                    Container(
+                      width: 316,
+                      child: ExpansionTile(
+                          collapsedIconColor: ColorResources.White,
+                          textColor: ColorResources.White,
+                          iconColor: ColorResources.White,
+                          backgroundColor: ColorResources.MatteBlack,
+                          title: Row(
+                            children: [
+                              Icon(
+                                Entypo.megaphone,
+                                color: ColorResources.White,
+                                size: 25,
+                              ),
+                              SizedBox(width: 50),
+                              Text(
+                                'Ad Campaigns',
+                                style: TextStyle(
+                                  color: ColorResources.White,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
                           ),
-                        )
-                      ],
+                          children: [
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Create Ad Campaign',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Edit Ad Campaign',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Ad Campaign Insights',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                          ]),
                     ),
                     const VerticalSpace(),
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.speaker,
-                          color: ColorResources.White,
-                          size: 25,
-                        ),
-                        HorizontalSpace(),
-                        Text(
-                          'Post Boosts',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                    Container(
+                      width: 316,
+                      child: ExpansionTile(
+                          collapsedIconColor: ColorResources.White,
+                          textColor: ColorResources.White,
+                          iconColor: ColorResources.White,
+                          backgroundColor: ColorResources.MatteBlack,
+                          title: Row(
+                            children: [
+                              Icon(
+                                Icons.rocket_launch,
+                                color: ColorResources.White,
+                                size: 25,
+                              ),
+                              SizedBox(width: 50),
+                              Text(
+                                'Post Boost',
+                                style: TextStyle(
+                                  color: ColorResources.White,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
                           ),
-                        )
-                      ],
+                          children: [
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Boost Post',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Boost Post Insights',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                          ]),
                     ),
                     const VerticalSpace(),
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.speaker,
-                          color: ColorResources.White,
-                          size: 25,
-                        ),
-                        HorizontalSpace(),
-                        Text(
-                          'Monetization',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                    Container(
+                      width: 316,
+                      child: ExpansionTile(
+                          collapsedIconColor: ColorResources.White,
+                          textColor: ColorResources.White,
+                          iconColor: ColorResources.White,
+                          backgroundColor: ColorResources.MatteBlack,
+                          title: Row(
+                            children: [
+                              Icon(
+                                Icons.monetization_on_rounded,
+                                color: ColorResources.White,
+                                size: 25,
+                              ),
+                              SizedBox(width: 50),
+                              Text(
+                                'Monetizaion',
+                                style: TextStyle(
+                                  color: ColorResources.White,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
                           ),
-                        )
-                      ],
+                          children: [
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Monetizaion Videos Insights',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                          ]),
                     ),
                     const VerticalSpace(),
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.speaker,
-                          color: ColorResources.White,
-                          size: 25,
-                        ),
-                        HorizontalSpace(),
-                        Text(
-                          'Payment Methods',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                    Container(
+                      width: 316,
+                      child: ExpansionTile(
+                          collapsedIconColor: ColorResources.White,
+                          textColor: ColorResources.White,
+                          iconColor: ColorResources.White,
+                          backgroundColor: ColorResources.MatteBlack,
+                          title: Row(
+                            children: [
+                              Icon(
+                                Feather.dollar_sign,
+                                color: ColorResources.White,
+                                size: 25,
+                              ),
+                              SizedBox(width: 50),
+                              Text(
+                                'Payment Methods',
+                                style: TextStyle(
+                                  color: ColorResources.White,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
                           ),
-                        )
-                      ],
+                          children: [
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Pay',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                            ListTile(
+                              title: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Get Paid',
+                                    style: TextStyle(
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )),
+                            ),
+                          ]),
                     ),
                     const VerticalSpace(),
                     Row(

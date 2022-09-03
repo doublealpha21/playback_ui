@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:playback_ui/screens/profile/other_profile.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
@@ -243,7 +244,7 @@ class Settings_Screen extends StatelessWidget {
                   Row(
                     children: const [
                       Icon(
-                        Icons.copy_outlined,
+                        MaterialIcons.privacy_tip,
                         color: ColorResources.White,
                         size: 25,
                       ),

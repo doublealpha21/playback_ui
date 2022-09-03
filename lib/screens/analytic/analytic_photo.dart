@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
 class AnalyticPhoto extends StatelessWidget {
@@ -10,27 +9,34 @@ class AnalyticPhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorResources.Black,
-      appBar: const CommonAppBar(
-        title: 'Insights',
+      appBar: AppBar(
+        backgroundColor: ColorResources.Black,
+        title: const Text(
+          'Insights',
+          style: TextStyle(
+            color: ColorResources.White,
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () {},
+              child: const Text(
+                'Per Post',
+                style: TextStyle(
+                  color: ColorResources.White,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ))
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
-                  Text(
-                    'Per Post',
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )
-                ],
-              ),
               const VerticalSpace(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -101,7 +107,7 @@ class AnalyticPhoto extends StatelessWidget {
                   padding: const EdgeInsets.all(16),
                   child: ExpansionTile(
                     title: const Text(
-                      'Photo Views',
+                      ' All Photo Views',
                       style: TextStyle(
                         color: ColorResources.GreyText,
                         fontSize: 14,
@@ -375,6 +381,70 @@ class AnalyticPhoto extends StatelessWidget {
                       )
                     ],
                   )),
+              const VerticalSpace(),
+              Column(
+                children: [
+                  Image.asset('images/tooltip.png'),
+                  Image.asset('images/graph_line.png'),
+                  Image.asset('images/x_axis.png'),
+                ],
+              ),
+              const VerticalSpace(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Date',
+                    style: TextStyle(
+                      color: ColorResources.White,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  Row(
+                    children: const [
+                      Text(
+                        'Photos Views',
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      SizedBox(width: 15),
+                      Text(
+                        'Avg/Hour',
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      SizedBox(width: 15),
+                      Text(
+                        'Graph',
+                        style: TextStyle(
+                          color: ColorResources.White,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+              VerticalSpace(),
+              Column(
+                children: [
+                  Image.asset('images/3019.png'),
+                  const VerticalSpace(),
+                  Image.asset('images/3020.png'),
+                  const VerticalSpace(),
+                  Image.asset('images/3021.png'),
+                  const VerticalSpace(),
+                  Image.asset('images/3022.png'),
+                ],
+              )
             ],
           ),
         ],

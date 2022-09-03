@@ -10,27 +10,34 @@ class AllPost extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorResources.Black,
-      appBar: const CommonAppBar(
-        title: 'Insights',
+      appBar: AppBar(
+        backgroundColor: ColorResources.Black,
+        title: const Text(
+          'Insights',
+          style: TextStyle(
+            color: ColorResources.White,
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () {},
+              child: const Text(
+                'Per Post',
+                style: TextStyle(
+                  color: ColorResources.White,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ))
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
-                  Text(
-                    'Per Post',
-                    style: TextStyle(
-                      color: ColorResources.White,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )
-                ],
-              ),
               const VerticalSpace(),
               Container(
                 color: ColorResources.MatteBlack,
@@ -252,6 +259,14 @@ class AllPost extends StatelessWidget {
                       ),
                     ],
                   )),
+              VerticalSpace(),
+              Column(
+                children: [
+                  Image.asset('images/tooltip.png'),
+                  Image.asset('images/graph_line.png'),
+                  Image.asset('images/x_axis.png'),
+                ],
+              ),
             ],
           )
         ],

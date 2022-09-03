@@ -79,7 +79,7 @@ class CampaignScreen6 extends StatelessWidget {
               'Manage Existing Ads',
               style: TextStyle(
                 color: ColorResources.GreyText,
-                fontSize: 16,
+                fontSize: 13,
                 fontWeight: FontWeight.w500,
               ),
             ),
