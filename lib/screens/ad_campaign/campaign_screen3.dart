@@ -29,12 +29,7 @@ class CampaignScreen3 extends StatelessWidget {
                 ),
                 const VerticalSpace(),
                 Center(
-                  child: SizedBox(
-                    width: 296,
-                    height: 580,
-                    child:
-                        Expanded(child: Image.asset('images/group_3210.png')),
-                  ),
+                  child: Image.asset('images/group_3210.png'),
                 ),
                 Container(
                   height: 2,
