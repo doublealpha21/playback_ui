@@ -129,73 +129,130 @@ class Onboard2 extends StatelessWidget {
             const VerticalSpace(),
             const Custom_Textfield(hint: 'Search for #tags'),
             const VerticalSpace(),
-            ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xff583FB9),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: Row(
-                    children: const [
-                      Text('#Holiday',
-
-                      )
-                    ],
-                  ),
-                )),
-            const VerticalSpace(),
-            ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xff583FB9),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(6)),
-                    fixedSize: const Size.fromWidth(100)),
-                child: Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: Row(
-                    children: const [
-                      Text('#Holiday',
-
-                      )
-                    ],
-                  ),
-                )),
-            const VerticalSpace(),
-            ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xff583FB9),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: Row(
-                    children: const [
-                      Text('#Holiday',
-
-                      )
-                    ],
-                  ),
-                )),
-            const VerticalSpace(),
-            ElevatedButton(onPressed: (){},
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xff222226),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff583FB9),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: Size.fromWidth(152),
                     ),
-                    elevation: 0.0),
-                child: const Text('#Holiday'
-                )),
-
+                    child: Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff222226),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: Size.fromWidth(152),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+              ],
+            ),
+            const VerticalSpace(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff222226),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: Size.fromWidth(152),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff222226),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: Size.fromWidth(152),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+              ],
+            ),
+            const VerticalSpace(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff222226),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: Size.fromWidth(152),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff583FB9),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: Size.fromWidth(152),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+              ],
+            ),
+            const VerticalSpace(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xff222226),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6.0),
+                        ),
+                        fixedSize: Size.fromWidth(152),
+                        elevation: 0.0),
+                    child: const Text('#Holiday')),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xff222226),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6.0),
+                        ),
+                        fixedSize: Size.fromWidth(152),
+                        elevation: 0.0),
+                    child: const Text('#Holiday')),
+              ],
+            ),
             const SizedBox(height: 80),
             ElevatedButton(
-              onPressed: (){
+              onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Onboard3()),
@@ -203,6 +260,7 @@ class Onboard2 extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xff583FB9),
+                  fixedSize: Size.fromWidth(216),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(6.0),
                   ),
@@ -210,11 +268,11 @@ class Onboard2 extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: Row(
-                  children: const  [
+                  children: const [
                     Expanded(
                       child: Text(
                         'Next Step',
-                        style:  TextStyle(
+                        style: TextStyle(
                           fontSize: 16.0,
                           color: ColorResources.White,
                           fontWeight: FontWeight.w600,
@@ -222,13 +280,14 @@ class Onboard2 extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ),
-                    Icon(Icons.arrow_forward_ios_rounded,
-                      color:Colors.white ,)
+                    Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      color: Colors.white,
+                    )
                   ],
                 ),
               ),
-            )
-
+            ),
           ],
         ),
       ),

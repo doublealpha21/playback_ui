@@ -14,7 +14,7 @@ class CustomMiniButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(6.0),
         ),
-        primary: Colour,
+        backgroundColor: Colour,
         padding: const EdgeInsets.all(12),
         elevation: 0.0,
         fixedSize: const Size.fromWidth(80),
