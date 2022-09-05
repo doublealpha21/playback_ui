@@ -106,7 +106,7 @@ class IndiVideoAnalytic extends StatelessWidget {
               )
             ],
           ),
-          VerticalSpace(),
+          const VerticalSpace(),
           Image.asset('images/slider.png'),
           const VerticalSpace(),
           Container(

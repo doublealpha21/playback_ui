@@ -14,7 +14,7 @@ class AllPostAnalytic extends StatelessWidget {
         title: 'Insights',
       ),
       body: ListView(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         children: [
           Column(
             children: [

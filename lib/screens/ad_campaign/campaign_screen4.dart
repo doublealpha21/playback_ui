@@ -183,7 +183,8 @@ class CampaignScreen4 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => BoostVideos5()),
+                      MaterialPageRoute(
+                          builder: (context) => const BoostVideos5()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

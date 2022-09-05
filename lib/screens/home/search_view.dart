@@ -13,8 +13,8 @@ class SearchView extends StatelessWidget {
       backgroundColor: ColorResources.Black,
       body: Column(
         children: [
-          VerticalSpace(),
-          VerticalSpace(),
+          const VerticalSpace(),
+          const VerticalSpace(),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -86,7 +86,7 @@ class SearchView extends StatelessWidget {
                   ),
                 ],
               ),
-              Icon(
+              const Icon(
                 MaterialCommunityIcons.arrow_top_left,
                 color: ColorResources.White,
               )
@@ -98,9 +98,9 @@ class SearchView extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.search_rounded, color: ColorResources.White),
-                  SizedBox(width: 10),
-                  Text(
+                  const Icon(Icons.search_rounded, color: ColorResources.White),
+                  const SizedBox(width: 10),
+                  const Text(
                     'momeents',
                     style: TextStyle(
                       color: ColorResources.White,
@@ -110,7 +110,7 @@ class SearchView extends StatelessWidget {
                   ),
                 ],
               ),
-              Icon(
+              const Icon(
                 MaterialCommunityIcons.arrow_top_left,
                 color: ColorResources.White,
               )
@@ -122,9 +122,9 @@ class SearchView extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.search_rounded, color: ColorResources.White),
-                  SizedBox(width: 10),
-                  Text(
+                  const Icon(Icons.search_rounded, color: ColorResources.White),
+                  const SizedBox(width: 10),
+                  const Text(
                     'momdts',
                     style: TextStyle(
                       color: ColorResources.White,
@@ -134,7 +134,7 @@ class SearchView extends StatelessWidget {
                   ),
                 ],
               ),
-              Icon(
+              const Icon(
                 MaterialCommunityIcons.arrow_top_left,
                 color: ColorResources.White,
               )

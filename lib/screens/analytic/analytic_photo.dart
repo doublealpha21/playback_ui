@@ -447,7 +447,7 @@ class AnalyticPhoto extends StatelessWidget {
                   )
                 ],
               ),
-              VerticalSpace(),
+              const VerticalSpace(),
               Column(
                 children: [
                   Image.asset('images/3019.png'),

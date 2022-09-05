@@ -37,7 +37,7 @@ class _SearchResultsState extends State<SearchResults> {
           Column(
             children: [
               Image.asset('images/group_3222.png'),
-              VerticalSpace(),
+              const VerticalSpace(),
               TextField(
                 decoration: const InputDecoration(
                   hintText: 'Search',

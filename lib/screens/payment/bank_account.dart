@@ -61,7 +61,8 @@ class BankAccount extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PaypalAccount()),
+                      MaterialPageRoute(
+                          builder: (context) => const PaypalAccount()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
@@ -148,7 +149,7 @@ class BankAccount extends StatelessWidget {
               hint: 'Save',
               Colour: ColorResources.PrimaryPink,
             ),
-            VerticalSpace(),
+            const VerticalSpace(),
             Center(
               child: Column(
                 children: const [

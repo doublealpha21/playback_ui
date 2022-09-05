@@ -175,7 +175,7 @@ class _CampaignScreen2State extends State<CampaignScreen2> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  VerticalSpace(),
+                  const VerticalSpace(),
                   Image.asset('images/group_3204.png'),
                   const VerticalSpace(),
                   Row(

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:playback_ui/screens/ad_campaign/campaign_screen1.dart';
 import 'package:playback_ui/screens/ad_campaign/campaign_screen6.dart';
 import 'package:playback_ui/screens/analytic/select_post.dart';
-import 'package:playback_ui/screens/profile/my_profile.dart';
 import 'package:playback_ui/screens/profile/other_profile.dart';
 import 'package:playback_ui/screens/profile/settings_screen.dart';
 import 'package:playback_ui/utils/colors.dart';
@@ -139,7 +137,7 @@ class ProfileSidebar extends StatelessWidget {
                       ],
                     ),
                     const VerticalSpace(),
-                    Container(
+                    SizedBox(
                       width: 316,
                       child: ExpansionTile(
                           collapsedIconColor: ColorResources.White,
@@ -147,14 +145,14 @@ class ProfileSidebar extends StatelessWidget {
                           iconColor: ColorResources.White,
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
-                            children: [
-                              const Icon(
+                            children: const [
+                              Icon(
                                 Entypo.megaphone,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              const SizedBox(width: 50),
-                              const Text(
+                              SizedBox(width: 50),
+                              Text(
                                 'Ad Campaigns',
                                 style: TextStyle(
                                   color: ColorResources.PrimaryGreen,
@@ -211,7 +209,7 @@ class ProfileSidebar extends StatelessWidget {
                           ]),
                     ),
                     const VerticalSpace(),
-                    Container(
+                    SizedBox(
                       width: 316,
                       child: ExpansionTile(
                           collapsedIconColor: ColorResources.White,
@@ -219,14 +217,14 @@ class ProfileSidebar extends StatelessWidget {
                           iconColor: ColorResources.White,
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
-                            children: [
-                              const Icon(
+                            children: const [
+                              Icon(
                                 Icons.rocket_launch,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              const SizedBox(width: 50),
-                              const Text(
+                              SizedBox(width: 50),
+                              Text(
                                 'Post Boost',
                                 style: TextStyle(
                                   color: ColorResources.White,
@@ -264,7 +262,7 @@ class ProfileSidebar extends StatelessWidget {
                           ]),
                     ),
                     const VerticalSpace(),
-                    Container(
+                    SizedBox(
                       width: 316,
                       child: ExpansionTile(
                           collapsedIconColor: ColorResources.White,
@@ -272,15 +270,15 @@ class ProfileSidebar extends StatelessWidget {
                           iconColor: ColorResources.White,
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
-                            children: [
-                              const Icon(
+                            children: const [
+                              Icon(
                                 Icons.monetization_on_rounded,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              const SizedBox(width: 50),
-                              const Text(
-                                'Monetizaion',
+                              SizedBox(width: 50),
+                              Text(
+                                'Monetization',
                                 style: TextStyle(
                                   color: ColorResources.White,
                                   fontSize: 16,
@@ -294,7 +292,7 @@ class ProfileSidebar extends StatelessWidget {
                               title: TextButton(
                                   onPressed: () {},
                                   child: const Text(
-                                    'Monetizaion Videos Insights',
+                                    'Monetization Videos Insights',
                                     style: TextStyle(
                                       color: ColorResources.GreyText,
                                       fontSize: 14,
@@ -305,7 +303,7 @@ class ProfileSidebar extends StatelessWidget {
                           ]),
                     ),
                     const VerticalSpace(),
-                    Container(
+                    SizedBox(
                       width: 316,
                       child: ExpansionTile(
                           collapsedIconColor: ColorResources.White,
@@ -313,14 +311,14 @@ class ProfileSidebar extends StatelessWidget {
                           iconColor: ColorResources.White,
                           backgroundColor: ColorResources.MatteBlack,
                           title: Row(
-                            children: [
-                              const Icon(
+                            children: const [
+                              Icon(
                                 Feather.dollar_sign,
                                 color: ColorResources.White,
                                 size: 25,
                               ),
-                              const SizedBox(width: 50),
-                              const Text(
+                              SizedBox(width: 50),
+                              Text(
                                 'Payment Methods',
                                 style: TextStyle(
                                   color: ColorResources.White,

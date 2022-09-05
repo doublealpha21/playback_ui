@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:playback_ui/screens/profile/edit_profile.dart';
-import 'package:playback_ui/screens/profile/other_profile.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -56,21 +55,21 @@ class Settings_Screen extends StatelessWidget {
                   const VerticalSpace(),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.perm_identity,
                         color: ColorResources.White,
                         size: 25,
                       ),
-                      HorizontalSpace(),
+                      const HorizontalSpace(),
                       TextButton(
                         onPressed: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EditProfile()),
+                                builder: (context) => const EditProfile()),
                           );
                         },
-                        child: Text(
+                        child: const Text(
                           'Manage Account',
                           style: TextStyle(
                             color: ColorResources.PrimaryGreen,

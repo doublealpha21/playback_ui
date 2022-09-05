@@ -22,7 +22,7 @@ class Message2 extends StatelessWidget {
                   height: 28,
                   width: 28,
                   // color: const Color(0xffF80C7D),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset('images/profile_image.png')),

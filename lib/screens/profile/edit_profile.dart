@@ -26,7 +26,7 @@ class EditProfile extends StatelessWidget {
                         height: 72,
                         width: 72,
                         // color: const Color(0xffF80C7D),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.asset(
@@ -112,7 +112,8 @@ class EditProfile extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyProfile()),
+                          MaterialPageRoute(
+                              builder: (context) => const MyProfile()),
                         );
                       },
                       child: const Text(
@@ -124,7 +125,7 @@ class EditProfile extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Icon(
+                    const Icon(
                       Icons.arrow_forward_ios,
                       color: ColorResources.White,
                     )

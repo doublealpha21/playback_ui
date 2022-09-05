@@ -92,7 +92,7 @@ class BoostedVideoAnalytic extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => BoostVideos1()),
+                              builder: (context) => const BoostVideos1()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
@@ -138,9 +138,9 @@ class BoostedVideoAnalytic extends StatelessWidget {
                     )
                   ],
                 ),
-                VerticalSpace(),
+                const VerticalSpace(),
                 Image.asset('images/slider.png'),
-                VerticalSpace(),
+                const VerticalSpace(),
                 Container(
                   color: ColorResources.MatteBlack,
                   padding: const EdgeInsets.all(16),
@@ -417,7 +417,7 @@ class BoostedVideoAnalytic extends StatelessWidget {
                     )
                   ],
                 ),
-                VerticalSpace(),
+                const VerticalSpace(),
                 Column(
                   children: [
                     Image.asset('images/3019.png'),

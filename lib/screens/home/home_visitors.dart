@@ -41,7 +41,7 @@ class _HomeVisitorsState extends State<HomeVisitors> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Login()),
+                MaterialPageRoute(builder: (context) => const Login()),
               );
             },
             child: const Text(
@@ -57,7 +57,7 @@ class _HomeVisitorsState extends State<HomeVisitors> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SearchView()),
+                MaterialPageRoute(builder: (context) => const SearchView()),
               );
             },
             icon: const Icon(
@@ -79,7 +79,7 @@ class _HomeVisitorsState extends State<HomeVisitors> {
                       color: Colors.grey,
                     ),
                     shape: BoxShape.circle,
-                    color: Color(0xff2D2D2D),
+                    color: const Color(0xff2D2D2D),
                   ),
                   padding: const EdgeInsets.all(8.0),
                   margin: const EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 4.0),
@@ -119,7 +119,7 @@ class _HomeVisitorsState extends State<HomeVisitors> {
                               ),
                               borderRadius: BorderRadius.circular(16.0),
                               color: _selectedFilter == index
-                                  ? Color(0xff2D2D2D)
+                                  ? const Color(0xff2D2D2D)
                                   : Colors.black,
                             ),
                             padding: const EdgeInsets.all(8.0),

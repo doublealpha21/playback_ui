@@ -76,7 +76,7 @@ class _HomeLoggedInState extends State<HomeLoggedIn> {
                   height: 40,
                   width: 40,
                   // color: const Color(0xffF80C7D),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(

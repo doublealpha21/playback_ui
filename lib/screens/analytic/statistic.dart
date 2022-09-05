@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/analytic/all_post.dart';
 import 'package:playback_ui/utils/colors.dart';
-import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
 class Statistic extends StatelessWidget {
@@ -317,7 +316,7 @@ class Statistic extends StatelessWidget {
                   )
                 ],
               ),
-              VerticalSpace(),
+              const VerticalSpace(),
               Column(
                 children: [
                   Image.asset('images/3019.png'),

@@ -28,9 +28,9 @@ class PaypalAccount extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-            VerticalSpace(),
-            Custom_Textfield(hint: 'Paypak E-mail Adddress'),
-            SizedBox(height: 30),
+            const VerticalSpace(),
+            const Custom_Textfield(hint: 'Paypak E-mail Adddress'),
+            const SizedBox(height: 30),
             Row(
               children: [
                 IconButton(
@@ -49,9 +49,10 @@ class PaypalAccount extends StatelessWidget {
                     ))
               ],
             ),
-            VerticalSpace(),
-            CustomButton(hint: 'Save', Colour: ColorResources.PrimaryPink),
-            VerticalSpace(),
+            const VerticalSpace(),
+            const CustomButton(
+                hint: 'Save', Colour: ColorResources.PrimaryPink),
+            const VerticalSpace(),
             Center(
               child: Column(
                 children: const [

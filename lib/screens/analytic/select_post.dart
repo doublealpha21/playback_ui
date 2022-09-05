@@ -111,7 +111,7 @@ class SelectPostAnalytic extends StatelessWidget {
                 const VerticalSpace(),
                 TabBar(
                   tabs: <Widget>[
-                    Tab(child: Text('All')),
+                    const Tab(child: Text('All')),
                     OutlinedButton(
                       onPressed: () {
                         Navigator.push(
@@ -120,7 +120,7 @@ class SelectPostAnalytic extends StatelessWidget {
                               builder: (context) => const AnalyticPhoto()),
                         );
                       },
-                      child: Tab(
+                      child: const Tab(
                           child: Text(
                         'Monetized',
                         style: TextStyle(
@@ -130,12 +130,12 @@ class SelectPostAnalytic extends StatelessWidget {
                         ),
                       )),
                     ),
-                    Tab(child: Text('Boosted')),
+                    const Tab(child: Text('Boosted')),
                   ],
                   indicatorWeight: 3,
                   indicatorColor: ColorResources.White,
                 ),
-                VerticalSpace(),
+                const VerticalSpace(),
                 Image.asset('images/group_3191.png'),
               ],
             ),

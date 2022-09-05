@@ -356,7 +356,7 @@ class MyProfile extends StatelessWidget {
                   ),
                 ],
               ),
-              VerticalSpace(),
+              const VerticalSpace(),
               Image.asset('images/group_2895.png')
             ],
           ))

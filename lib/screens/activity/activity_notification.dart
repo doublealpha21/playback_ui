@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playback_ui/screens/activity/activity.dart';
-import 'package:playback_ui/screens/activity/message1.dart';
-import 'package:playback_ui/screens/activity/message2.dart';
 import 'package:playback_ui/screens/activity/message_selected.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
@@ -255,7 +253,7 @@ class ActivityNotification extends StatelessWidget {
                                     builder: (context) => const Activity()),
                               );
                             },
-                            child: Text(
+                            child: const Text(
                               'Jack Nicole, commented\nyour post',
                               style: TextStyle(
                                 color: ColorResources.PrimaryGreen,

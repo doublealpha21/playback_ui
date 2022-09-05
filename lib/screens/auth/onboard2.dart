@@ -134,9 +134,9 @@ class Onboard2 extends StatelessWidget {
                       backgroundColor: const Color(0xff583FB9),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
-                      fixedSize: Size.fromWidth(152),
+                      fixedSize: const Size.fromWidth(152),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         '#Holiday',
                       ),
@@ -147,41 +147,9 @@ class Onboard2 extends StatelessWidget {
                       backgroundColor: const Color(0xff222226),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
-                      fixedSize: Size.fromWidth(152),
+                      fixedSize: const Size.fromWidth(152),
                     ),
-                    child: Center(
-                      child: Text(
-                        '#Holiday',
-                      ),
-                    )),
-              ],
-            ),
-            const VerticalSpace(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xff222226),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6)),
-                      fixedSize: Size.fromWidth(152),
-                    ),
-                    child: Center(
-                      child: Text(
-                        '#Holiday',
-                      ),
-                    )),
-                ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xff222226),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6)),
-                      fixedSize: Size.fromWidth(152),
-                    ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         '#Holiday',
                       ),
@@ -198,9 +166,41 @@ class Onboard2 extends StatelessWidget {
                       backgroundColor: const Color(0xff222226),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
-                      fixedSize: Size.fromWidth(152),
+                      fixedSize: const Size.fromWidth(152),
                     ),
-                    child: Center(
+                    child: const Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff222226),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: const Size.fromWidth(152),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        '#Holiday',
+                      ),
+                    )),
+              ],
+            ),
+            const VerticalSpace(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xff222226),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      fixedSize: const Size.fromWidth(152),
+                    ),
+                    child: const Center(
                       child: Text(
                         '#Holiday',
                       ),
@@ -211,9 +211,9 @@ class Onboard2 extends StatelessWidget {
                       backgroundColor: const Color(0xff583FB9),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
-                      fixedSize: Size.fromWidth(152),
+                      fixedSize: const Size.fromWidth(152),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         '#Holiday',
                       ),
@@ -231,7 +231,7 @@ class Onboard2 extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6.0),
                         ),
-                        fixedSize: Size.fromWidth(152),
+                        fixedSize: const Size.fromWidth(152),
                         elevation: 0.0),
                     child: const Text('#Holiday')),
                 ElevatedButton(
@@ -241,7 +241,7 @@ class Onboard2 extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6.0),
                         ),
-                        fixedSize: Size.fromWidth(152),
+                        fixedSize: const Size.fromWidth(152),
                         elevation: 0.0),
                     child: const Text('#Holiday')),
               ],
@@ -256,7 +256,7 @@ class Onboard2 extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xff583FB9),
-                  fixedSize: Size.fromWidth(216),
+                  fixedSize: const Size.fromWidth(216),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(6.0),
                   ),

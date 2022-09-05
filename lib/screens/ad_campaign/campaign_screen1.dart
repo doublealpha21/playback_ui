@@ -47,7 +47,7 @@ class CampaignScreen1 extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => CampaignScreen2()),
+                            builder: (context) => const CampaignScreen2()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
