@@ -18,11 +18,6 @@ class Message2 extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(
-                Icons.arrow_back_ios,
-                color: ColorResources.White,
-                size: 25,
-              ),
               Container(
                   height: 28,
                   width: 28,

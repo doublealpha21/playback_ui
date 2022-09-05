@@ -11,58 +11,42 @@ class Tags extends StatelessWidget {
       backgroundColor: ColorResources.Black,
       appBar: AppBar(
         backgroundColor: ColorResources.Black,
-        title: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text(
+              '#moments',
+              style: TextStyle(
+                color: ColorResources.White,
+                fontSize: 18,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.all(3),
+              decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.all(Radius.circular(3)),
+                  border: Border.all(color: ColorResources.White),
+                  shape: BoxShape.rectangle),
+              child: Row(
                 children: const [
                   Icon(
-                    Icons.arrow_back_ios_new_rounded,
+                    Icons.bookmark_border_outlined,
                     color: ColorResources.White,
                   ),
+                  SizedBox(width: 10),
                   Text(
-                    '#moments',
+                    'Sign Up',
                     style: TextStyle(
                       color: ColorResources.White,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ],
               ),
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(3),
-                    decoration: BoxDecoration(
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(3)),
-                        border: Border.all(color: ColorResources.White),
-                        shape: BoxShape.rectangle),
-                    child: Row(
-                      children: const [
-                        Icon(
-                          Icons.bookmark_border_outlined,
-                          color: ColorResources.White,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Sign Up',
-                          style: TextStyle(
-                            color: ColorResources.White,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
+            )
+          ],
         ),
       ),
       body: Column(
@@ -91,7 +75,7 @@ class Tags extends StatelessWidget {
               )
             ],
           ),
-          VerticalSpace(),
+          const VerticalSpace(),
           Expanded(
             child: GridView.count(
               crossAxisCount: 3,

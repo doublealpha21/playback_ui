@@ -224,7 +224,7 @@ class IndiVideoAnalytic extends StatelessWidget {
                           '(32% from boost)',
                           style: TextStyle(
                             color: ColorResources.GreyText,
-                            fontSize: 16,
+                            fontSize: 15,
                             fontWeight: FontWeight.w700,
                           ),
                         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:playback_ui/screens/profile/my_profile.dart';
+import 'package:playback_ui/screens/home/home_logged_in.dart';
 import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
@@ -60,7 +60,7 @@ class BoostVideos5 extends StatelessWidget {
                     ),
                   ),
                 ),
-                VerticalSpace(),
+                const VerticalSpace(),
                 SizedBox(
                   width: 296,
                   height: 580,
@@ -76,7 +76,7 @@ class BoostVideos5 extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const MyProfile()),
+                          builder: (context) => const HomeLoggedIn()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

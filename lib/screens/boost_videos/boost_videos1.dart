@@ -10,8 +10,6 @@ class BoostVideos1 extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorResources.Black,
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back_ios_new_rounded,
-            color: ColorResources.White),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [

@@ -30,9 +30,10 @@ class OtherProfile extends StatelessWidget {
                         height: 47,
                         width: 47,
                         decoration: const BoxDecoration(
-                            shape: BoxShape.rectangle,
-                            borderRadius: BorderRadius.all(Radius.circular(9)),
-                            color: ColorResources.PrimaryGreen),
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.all(Radius.circular(9)),
+                        ),
+                        child: Image.asset('images/profile_image.png'),
                       ),
                       const HorizontalSpace(),
                       Column(

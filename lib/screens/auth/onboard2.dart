@@ -18,10 +18,6 @@ class Onboard2 extends StatelessWidget {
           children: [
             Row(
               children: const [
-                Icon(
-                  Icons.arrow_back_ios,
-                  color: ColorResources.White,
-                ),
                 Text(
                   'Back',
                   style: TextStyle(

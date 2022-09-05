@@ -11,8 +11,6 @@ class CampaignScreen1 extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorResources.Black,
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back_ios_new_rounded,
-            color: ColorResources.White),
         backgroundColor: ColorResources.Black,
       ),
       body: Column(

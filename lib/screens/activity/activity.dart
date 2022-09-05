@@ -34,7 +34,7 @@ class Activity extends StatelessWidget {
                       title: const Text(
                         'All Activity',
                         style: TextStyle(
-                          color: ColorResources.White,
+                          color: ColorResources.PrimaryGreen,
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
                         ),

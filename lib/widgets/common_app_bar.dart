@@ -16,11 +16,6 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(
-            Icons.arrow_back_ios,
-            color: ColorResources.White,
-            size: 20,
-          ),
           Text(
             title,
             style: const TextStyle(
