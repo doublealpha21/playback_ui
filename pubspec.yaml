@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_vector_icons: ^1.0.0
   expansion_tile_card: ^2.0.0
+  persistent_bottom_nav_bar_v2: ^4.2.5
 
 dev_dependencies:
   flutter_test:
