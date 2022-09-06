@@ -40,29 +40,35 @@ class MyProfile extends StatelessWidget {
                           ),
                           const HorizontalSpace(),
                           Column(
-                            children: const [
-                              Text(
-                                'Luz Anzo',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w400,
-                                ),
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: const [
+                                  Text(
+                                    'Luz Anzo',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  SizedBox(width: 5),
+                                  Icon(
+                                    Icons.check_circle,
+                                    color: Colors.blue,
+                                    size: 20,
+                                  ),
+                                ],
                               ),
-                              SizedBox(height: 5),
                               Text(
                                 '@luz.anzo',
                                 style: TextStyle(
                                   color: ColorResources.GreyText,
-                                  fontSize: 12,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
                             ],
-                          ),
-                          const Icon(
-                            Icons.check_circle,
-                            color: Colors.blue,
                           ),
                           const SizedBox(width: 30),
                           Container(

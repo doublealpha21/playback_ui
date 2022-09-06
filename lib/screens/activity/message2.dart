@@ -64,173 +64,186 @@ class Message2 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const VerticalSpace(),
-                    Container(
-                      width: 210,
-                      height: 137,
-                      color: ColorResources.MatteBlack,
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        children: [
-                          const Text(
-                              ' I really don\'t get what all the\n'
-                              'fuss is about. She could never'
-                              'compare to Cindy, Christy'
-                              'and other famous models.',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                              )),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: const [
-                              Text(
-                                '10:22 AM',
+                    SizedBox(
+                      // width: 210,
+                      // height: 137,
+                      child: Container(
+                        padding: const EdgeInsets.all(16.0),
+                        color: ColorResources.MatteBlack,
+                        child: Column(
+                          children: [
+                            const Text(
+                                ' I really don\'t get what all the\n'
+                                'fuss is about. She could never'
+                                'compare to Cindy, Christy'
+                                'and other famous models.',
                                 style: TextStyle(
                                   color: ColorResources.White,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
+                                )),
+                            const SizedBox(height: 5),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: const [
+                                Text(
+                                  '10:22 AM',
+                                  style: TextStyle(
+                                    color: ColorResources.White,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 2),
-                              Icon(
-                                AntDesign.checkcircle,
-                                color: ColorResources.PrimaryGreen,
-                              )
-                            ],
-                          )
-                        ],
+                                SizedBox(width: 5),
+                                Icon(
+                                  AntDesign.checkcircle,
+                                  color: ColorResources.PrimaryGreen,
+                                  size: 20,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     const VerticalSpace(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Container(
-                          width: 180,
-                          height: 80,
-                          color: const Color(0xff1E81C9),
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            children: [
-                              const Text(' Are you ok.. ?',
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w400,
-                                  )),
-                              const SizedBox(height: 5),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: const [
-                                  Text(
-                                    '10:22 AM',
+                        SizedBox(
+                          child: Container(
+                            // width: 180,
+                            // height: 80,
+                            color: const Color(0xff1E81C9),
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              children: [
+                                const Text(' Are you ok.. ?',
                                     style: TextStyle(
                                       color: ColorResources.White,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
+                                    )),
+                                const SizedBox(height: 5),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: const [
+                                    Text(
+                                      '10:22 AM',
+                                      style: TextStyle(
+                                        color: ColorResources.White,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(width: 2),
-                                  Icon(
-                                    AntDesign.checkcircle,
-                                    color: ColorResources.PrimaryGreen,
-                                  )
-                                ],
-                              )
-                            ],
+                                    SizedBox(width: 5),
+                                    Icon(
+                                      AntDesign.checkcircle,
+                                      color: ColorResources.PrimaryGreen,
+                                      size: 20,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
                     ),
                     const VerticalSpace(),
-                    Container(
-                      width: 210,
-                      height: 137,
-                      color: ColorResources.MatteBlack,
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        children: [
-                          const Text(
-                              ' I really don\'t get what all the\n'
-                              'fuss is about. She could never'
-                              'compare to Cindy, Christy'
-                              'and other famous models.',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                              )),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: const [
-                              Text(
-                                '10:22 AM',
+                    SizedBox(
+                      child: Container(
+                        // width: 210,
+                        // height: 137,
+                        color: ColorResources.MatteBlack,
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          children: [
+                            const Text(
+                                ' I really don\'t get what all the\n'
+                                'fuss is about. She could never'
+                                'compare to Cindy, Christy'
+                                'and other famous models.',
                                 style: TextStyle(
                                   color: ColorResources.White,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
+                                )),
+                            const SizedBox(height: 5),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: const [
+                                Text(
+                                  '10:22 AM',
+                                  style: TextStyle(
+                                    color: ColorResources.White,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 2),
-                              Icon(
-                                AntDesign.checkcircle,
-                                color: ColorResources.PrimaryGreen,
-                              )
-                            ],
-                          )
-                        ],
+                                SizedBox(width: 5),
+                                Icon(
+                                  AntDesign.checkcircle,
+                                  color: ColorResources.PrimaryGreen,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     const VerticalSpace(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Container(
-                          width: 240,
-                          height: 132,
-                          color: const Color(0xff1E81C9),
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            children: [
-                              const Text(
-                                  ' I really don\'t get what all the\n'
-                                  'fuss is about. She could never'
-                                  'compare to Cindy',
-                                  style: TextStyle(
-                                    color: ColorResources.White,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w400,
-                                  )),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children:  [
-                                  TextButton(
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const ConnectContacts()),
-                                      );
-                                    },
-                                    child: const Text(
+                        SizedBox(
+                          child: Container(
+                            // width: 240,
+                            // height: 132,
+                            color: const Color(0xff1E81C9),
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              children: [
+                                const Text(
+                                    ' I really don\'t get what all the\n'
+                                    'fuss is about. She could never\n'
+                                    'compare to Cindy',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w400,
+                                    )),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    const Text(
                                       '10:22 AM',
                                       style: TextStyle(
-                                        color: Colors.red,
+                                        color: Colors.amber,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400,
                                       ),
                                     ),
-                                  ),
-                                  const SizedBox(width: 2),
-                                  const Icon(
-                                    AntDesign.checkcircle,
-                                    color: ColorResources.PrimaryGreen,
-                                  )
-                                ],
-                              )
-                            ],
+                                    const SizedBox(width: 5),
+                                    IconButton(
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const ConnectContacts()),
+                                        );
+                                      },
+                                      icon: Icon(
+                                        AntDesign.checkcircle,
+                                        color: ColorResources.PrimaryGreen,
+                                        size: 20,
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
