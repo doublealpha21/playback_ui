@@ -21,6 +21,13 @@ class _HomeLoggedInState extends State<HomeLoggedIn> {
     'Popular',
     'Popular',
   ];
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   int _selectedFilter = -1;
 
@@ -190,6 +197,35 @@ class _HomeLoggedInState extends State<HomeLoggedIn> {
             ),
           )
         ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            activeIcon: Icon(Icons.home),
+            label: ' ',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.circle,
+              ),
+              activeIcon: Icon(Icons.circle),
+              label: ' '),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              activeIcon: Icon(Icons.person),
+              label: ' '),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        showUnselectedLabels: false,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[800]),
+        selectedIconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.black,
       ),
     );
   }

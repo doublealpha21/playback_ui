@@ -5,8 +5,21 @@ import 'package:playback_ui/widgets/common_app_bar.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
-class Activity extends StatelessWidget {
+class Activity extends StatefulWidget {
   const Activity({Key? key}) : super(key: key);
+
+  @override
+  State<Activity> createState() => _ActivityState();
+}
+
+class _ActivityState extends State<Activity> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -387,6 +400,35 @@ class Activity extends StatelessWidget {
               )
             ],
           )),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            activeIcon: Icon(Icons.home),
+            label: ' ',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.circle,
+              ),
+              activeIcon: Icon(Icons.circle),
+              label: ' '),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              activeIcon: Icon(Icons.person),
+              label: ' '),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        showUnselectedLabels: false,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[800]),
+        selectedIconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.black,
+      ),
     );
   }
 }

@@ -20,6 +20,13 @@ class _FavoriteVideosState extends State<FavoriteVideos> {
   ];
 
   int _selectedFilter = -1;
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -122,6 +129,35 @@ class _FavoriteVideosState extends State<FavoriteVideos> {
             ),
           )
         ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            activeIcon: Icon(Icons.home),
+            label: ' ',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.circle,
+              ),
+              activeIcon: Icon(Icons.circle),
+              label: ' '),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              activeIcon: Icon(Icons.person),
+              label: ' '),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        showUnselectedLabels: false,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[800]),
+        selectedIconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.black,
       ),
     );
   }

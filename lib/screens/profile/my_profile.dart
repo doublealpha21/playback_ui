@@ -5,8 +5,21 @@ import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/horizontal_space.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 
-class MyProfile extends StatelessWidget {
+class MyProfile extends StatefulWidget {
   const MyProfile({Key? key}) : super(key: key);
+
+  @override
+  State<MyProfile> createState() => _MyProfileState();
+}
+
+class _MyProfileState extends State<MyProfile> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,344 +33,344 @@ class MyProfile extends StatelessWidget {
         children: [
           Expanded(
               child: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              Column(
+                padding: const EdgeInsets.all(16),
                 children: [
                   Column(
                     children: [
-                      Row(
+                      Column(
                         children: [
-                          Container(
-                            height: 47,
-                            width: 47,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(9)),
-                            ),
-                            child: Image.asset('images/profile_image.png'),
-                          ),
-                          const HorizontalSpace(),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          Row(
                             children: [
-                              Row(
-                                children: const [
+                              Container(
+                                height: 47,
+                                width: 47,
+                                decoration: const BoxDecoration(
+                                  shape: BoxShape.rectangle,
+                                  borderRadius:
+                                  BorderRadius.all(Radius.circular(9)),
+                                ),
+                                child: Image.asset('images/profile_image.png'),
+                              ),
+                              const HorizontalSpace(),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        'Luz Anzo',
+                                        style: TextStyle(
+                                          color: ColorResources.White,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(width: 5),
+                                      Icon(
+                                        Icons.check_circle,
+                                        color: Colors.blue,
+                                        size: 20,
+                                      ),
+                                    ],
+                                  ),
                                   Text(
-                                    'Luz Anzo',
+                                    '@luz.anzo',
                                     style: TextStyle(
-                                      color: ColorResources.White,
-                                      fontSize: 16,
+                                      color: ColorResources.GreyText,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                   ),
-                                  SizedBox(width: 5),
-                                  Icon(
-                                    Icons.check_circle,
-                                    color: Colors.blue,
-                                    size: 20,
-                                  ),
                                 ],
                               ),
-                              Text(
-                                '@luz.anzo',
-                                style: TextStyle(
-                                  color: ColorResources.GreyText,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
+                              const SizedBox(width: 30),
+                              Container(
+                                height: 34,
+                                width: 34,
+                                // color: const Color(0xffF80C7D),
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                      width: 1, color: ColorResources.White),
+                                ),
+                                child: IconButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => const Message1()),
+                                    );
+                                  },
+                                  icon: const Icon(
+                                    Icons.message,
+                                    color: ColorResources.PrimaryGreen,
+                                    size: 16,
+                                  ),
                                 ),
                               ),
-                            ],
-                          ),
-                          const SizedBox(width: 30),
-                          Container(
-                            height: 34,
-                            width: 34,
-                            // color: const Color(0xffF80C7D),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  width: 1, color: ColorResources.White),
-                            ),
-                            child: IconButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const Message1()),
-                                );
-                              },
-                              icon: const Icon(
-                                Icons.message,
-                                color: ColorResources.PrimaryGreen,
-                                size: 16,
-                              ),
-                            ),
-                          ),
-                          const HorizontalSpace(),
-                          // Container(
-                          //   padding: EdgeInsets.all(12),
-                          //   height: 40,
-                          //   width: 100,
-                          //   decoration: BoxDecoration(
-                          //     color: Color(0Xff1C1C1C),
-                          //     borderRadius: BorderRadius.all(Radius.circular(6))
-                          //   ),
-                          //   child: Text('Edit Profile',
-                          //     style: TextStyle(
-                          //       color: ColorResources.White,
-                          //       fontSize: 14,
-                          //       fontWeight: FontWeight.w400,
-                          //     ),
-                          //   ),
-                          // )
-                          ElevatedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
+                              const HorizontalSpace(),
+                              // Container(
+                              //   padding: EdgeInsets.all(12),
+                              //   height: 40,
+                              //   width: 100,
+                              //   decoration: BoxDecoration(
+                              //     color: Color(0Xff1C1C1C),
+                              //     borderRadius: BorderRadius.all(Radius.circular(6))
+                              //   ),
+                              //   child: Text('Edit Profile',
+                              //     style: TextStyle(
+                              //       color: ColorResources.White,
+                              //       fontSize: 14,
+                              //       fontWeight: FontWeight.w400,
+                              //     ),
+                              //   ),
+                              // )
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
                                         const Settings_Screen()),
-                              );
-                            },
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6.0),
-                              ),
-                              backgroundColor: ColorResources.PrimaryGreen,
-                              padding: const EdgeInsets.all(12),
-                              elevation: 0.0,
-                              fixedSize: const Size.fromWidth(114),
-                            ),
-                            child: const Text(
-                              'Edit Profile',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 40),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6.0),
-                              ),
-                              backgroundColor: const Color(0xff1C1C1C),
-                              padding: const EdgeInsets.all(12),
-                              elevation: 0.0,
-                              fixedSize: const Size.fromWidth(112),
-                            ),
-                            child: const Text(
-                              'Boost Posts',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6.0),
-                              ),
-                              backgroundColor: const Color(0xff1C1C1C),
-                              padding: const EdgeInsets.all(12),
-                              elevation: 0.0,
-                              fixedSize: const Size.fromWidth(112),
-                            ),
-                            child: const Text(
-                              'Create Ads',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6.0),
-                              ),
-                              backgroundColor: const Color(0xff1C1C1C),
-                              padding: const EdgeInsets.all(12),
-                              elevation: 0.0,
-                              fixedSize: const Size.fromWidth(112),
-                            ),
-                            child: const Text(
-                              'Insights',
-                              style: TextStyle(
-                                color: ColorResources.White,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                      const VerticalSpace(),
-                      const Text(
-                        'PIVOTGANG 🏀 CARE FOR ME TOUR OUT NOW 🎙\n',
-                        style: TextStyle(
-                          color: ColorResources.White,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                      const Text(
-                        'This remind me of before we had insomnia\n'
-                        'Sleepin\' peacefully, never needed a pile of drugs',
-                        style: TextStyle(
-                          color: ColorResources.White,
-                          fontSize: 13,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: const [
-                              Text(
-                                '29',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
+                                  );
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                  ),
+                                  backgroundColor: ColorResources.PrimaryGreen,
+                                  padding: const EdgeInsets.all(12),
+                                  elevation: 0.0,
+                                  fixedSize: const Size.fromWidth(114),
                                 ),
-                              ),
-                              SizedBox(height: 5),
-                              SizedBox(height: 5),
-                              Text(
-                                'Following',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              )
-                            ],
-                          ),
-                          Column(
-                            children: const [
-                              Text(
-                                '121.9k',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                              SizedBox(height: 5),
-                              Text(
-                                'Followers',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              )
-                            ],
-                          ),
-                          Column(
-                            children: const [
-                              Text(
-                                '15.1k',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                              SizedBox(height: 5),
-                              Text(
-                                'Views',
-                                style: TextStyle(
-                                  color: ColorResources.White,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              )
-                            ],
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6.0),
-                              ),
-                              backgroundColor: const Color(0xff1C1C1C),
-                              padding: const EdgeInsets.all(12),
-                              elevation: 0.0,
-                              fixedSize: const Size.fromWidth(162),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: const [
-                                Icon(
-                                  Icons.video_collection_outlined,
-                                  color: ColorResources.White,
-                                ),
-                                Text(
-                                  'Videos',
+                                child: const Text(
+                                  'Edit Profile',
                                   style: TextStyle(
                                     color: ColorResources.White,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
-                              ],
-                            ),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6.0),
                               ),
-                              backgroundColor: const Color(0xff1C1C1C),
-                              padding: const EdgeInsets.all(12),
-                              elevation: 0.0,
-                              fixedSize: const Size.fromWidth(162),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: const [
-                                Icon(
-                                  Icons.photo_library_outlined,
-                                  color: ColorResources.White,
+                            ],
+                          ),
+                          const SizedBox(height: 40),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                  ),
+                                  backgroundColor: const Color(0xff1C1C1C),
+                                  padding: const EdgeInsets.all(12),
+                                  elevation: 0.0,
+                                  fixedSize: const Size.fromWidth(112),
                                 ),
-                                Text(
-                                  'Photos',
+                                child: const Text(
+                                  'Boost Posts',
                                   style: TextStyle(
                                     color: ColorResources.White,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
-                              ],
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                  ),
+                                  backgroundColor: const Color(0xff1C1C1C),
+                                  padding: const EdgeInsets.all(12),
+                                  elevation: 0.0,
+                                  fixedSize: const Size.fromWidth(112),
+                                ),
+                                child: const Text(
+                                  'Create Ads',
+                                  style: TextStyle(
+                                    color: ColorResources.White,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                  ),
+                                  backgroundColor: const Color(0xff1C1C1C),
+                                  padding: const EdgeInsets.all(12),
+                                  elevation: 0.0,
+                                  fixedSize: const Size.fromWidth(112),
+                                ),
+                                child: const Text(
+                                  'Insights',
+                                  style: TextStyle(
+                                    color: ColorResources.White,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                          const VerticalSpace(),
+                          const Text(
+                            'PIVOTGANG 🏀 CARE FOR ME TOUR OUT NOW 🎙\n',
+                            style: TextStyle(
+                              color: ColorResources.White,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
-                        ],
-                      ),
+                          const Text(
+                            'This remind me of before we had insomnia\n'
+                                'Sleepin\' peacefully, never needed a pile of drugs',
+                            style: TextStyle(
+                              color: ColorResources.White,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Column(
+                                children: const [
+                                  Text(
+                                    '29',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                  SizedBox(height: 5),
+                                  SizedBox(height: 5),
+                                  Text(
+                                    'Following',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Column(
+                                children: const [
+                                  Text(
+                                    '121.9k',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                  SizedBox(height: 5),
+                                  Text(
+                                    'Followers',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Column(
+                                children: const [
+                                  Text(
+                                    '15.1k',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                  SizedBox(height: 5),
+                                  Text(
+                                    'Views',
+                                    style: TextStyle(
+                                      color: ColorResources.White,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                  ),
+                                  backgroundColor: const Color(0xff1C1C1C),
+                                  padding: const EdgeInsets.all(12),
+                                  elevation: 0.0,
+                                  fixedSize: const Size.fromWidth(162),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: const [
+                                    Icon(
+                                      Icons.video_collection_outlined,
+                                      color: ColorResources.White,
+                                    ),
+                                    Text(
+                                      'Videos',
+                                      style: TextStyle(
+                                        color: ColorResources.White,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                  ),
+                                  backgroundColor: const Color(0xff1C1C1C),
+                                  padding: const EdgeInsets.all(12),
+                                  elevation: 0.0,
+                                  fixedSize: const Size.fromWidth(162),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: const [
+                                    Icon(
+                                      Icons.photo_library_outlined,
+                                      color: ColorResources.White,
+                                    ),
+                                    Text(
+                                      'Photos',
+                                      style: TextStyle(
+                                        color: ColorResources.White,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                     ],
                   ),
                 ],
@@ -367,6 +380,35 @@ class MyProfile extends StatelessWidget {
             ],
           ))
         ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            activeIcon: Icon(Icons.home),
+            label: ' ',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.circle,
+              ),
+              activeIcon: Icon(Icons.circle),
+              label: ' '),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              activeIcon: Icon(Icons.person),
+              label: ' '),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        showUnselectedLabels: false,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[800]),
+        selectedIconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.black,
       ),
     );
   }

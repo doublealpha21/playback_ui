@@ -4,8 +4,21 @@ import 'package:playback_ui/utils/colors.dart';
 import 'package:playback_ui/widgets/vertical_space.dart';
 import 'package:playback_ui/widgets/common_app_bar.dart';
 
-class EditProfile extends StatelessWidget {
+class EditProfile extends StatefulWidget {
   const EditProfile({Key? key}) : super(key: key);
+
+  @override
+  State<EditProfile> createState() => _EditProfileState();
+}
+
+class _EditProfileState extends State<EditProfile> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,19 +67,19 @@ class EditProfile extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border:
-                              Border.all(width: 1, color: ColorResources.White),
+                          Border.all(width: 1, color: ColorResources.White),
                         ),
                         child: Image.asset('images/rectangle_2305.png')
-                        // const Text(
-                        //   '1',
-                        //   textAlign: TextAlign.center,
-                        //   style: TextStyle(
-                        //     color: ColorResources.White,
-                        //     fontSize: 24,
-                        //     fontWeight: FontWeight.bold,
-                        //   ),
-                        // )
-                        ),
+                      // const Text(
+                      //   '1',
+                      //   textAlign: TextAlign.center,
+                      //   style: TextStyle(
+                      //     color: ColorResources.White,
+                      //     fontSize: 24,
+                      //     fontWeight: FontWeight.bold,
+                      //   ),
+                      // )
+                    ),
                     const VerticalSpace(),
                     const Text(
                       'Change Background',
@@ -299,6 +312,35 @@ class EditProfile extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            activeIcon: Icon(Icons.home),
+            label: ' ',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.circle,
+              ),
+              activeIcon: Icon(Icons.circle),
+              label: ' '),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              activeIcon: Icon(Icons.person),
+              label: ' '),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        showUnselectedLabels: false,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[800]),
+        selectedIconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.black,
       ),
     );
   }
